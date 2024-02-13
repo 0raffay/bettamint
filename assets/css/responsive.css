@@ -4,7 +4,13 @@
 
 @media only screen and (max-width: 1360px) {}
 
-@media only screen and (max-width: 1240px) {}
+@media only screen and (max-width: 1220px) {
+    .solutionsSection .horizontalCard img {
+        width: 100%;
+        min-height: 469px;
+        object-fit: cover;
+    }
+}
 
 @media only screen and (max-width: 1170px) {}
 
@@ -16,13 +22,12 @@
 
 @media only screen and (max-width: 767px) {
     :root {
-        --section-padding: 40px 0; 
+        --section-padding: 40px 0;
         --font-controller: 3px;
     }
 }
 
-@media only screen and (max-width: 580px) {
-}
+@media only screen and (max-width: 580px) {}
 
 @media only screen and (max-width: 480px) {
     :root {
