@@ -16,15 +16,24 @@
     box-sizing: border-box;
 }
 
-*:not(.no-focus-reset):where(:focus) {
+*:not(.no-focus-reset, .btn, input, select, textarea, div, a:has(i[class*="right"])):where(:focus) {
     outline: none;
     border-bottom: 1px solid currentColor;
 }
 
-a,
-a:not(.no-hover-black):hover {
+i[class*="right"]:where(:focus) {
+    opacity: .8;
+    outline: none;
+}
+
+a {
     color: #000;
     text-decoration: none;
+
+}
+
+a:hover {
+    color: var(--clr-primary);
 }
 
 html,
@@ -360,6 +369,10 @@ label {
     .container {
         max-width: 1366px;
     }
+
+    .container.container-large {
+        max-width: 1562px;
+    }
 }
 
 /**--- CUSTOM LAYOUT CSS START ---*/
@@ -455,7 +468,7 @@ label {
 }
 
 .section_text.small {
-    max-width: 499px;
+    max-width: 833px;
     width: 100%;
 }
 
@@ -581,6 +594,27 @@ label {
     text-decoration: underline;
 }
 
+.primary-link-button {
+    font-size: var(--fs-25);
+    font-weight: 600;
+    line-height: auto;
+    color: var(--clr-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.secondary-link-button {
+    color: var(--clr-secondary);
+    gap: 10px;
+    line-height: auto;
+    font-size: var(--fs-15);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+
 /* BACKGROUNDS START */
 
 .bg-primary {
@@ -629,6 +663,10 @@ label {
 
 .fc-secondary {
     color: var(--clr-secondary);
+}
+
+.fc-light-black {
+    color: #020202;
 }
 
 /* FONT COLORS END */
@@ -883,7 +921,7 @@ i.icon.arrow-down::after {
     font-size: var(--fs-14);
     line-height: auto;
     color: #FFF;
-    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    /* text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); */
     font-weight: 400;
     margin-bottom: 8px;
 }
@@ -971,5 +1009,146 @@ i.icon.arrow-down::after {
     }
 }
 
-
 /* Solution end */
+
+/* Product start */
+
+.arrow-right-icon-green::after {
+    content: url(../images/icons/arrow-right-green.svg);
+}
+
+.arrow-right-icon-purple::after {
+    content: url(../images/icons/arrow-right-purple.svg);
+}
+
+.arrow-right-icon-black::after {
+    content: url(../images/icons/arrow-right-black.svg);
+}
+
+.productSection {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.productSection::after {
+    content: url(../images/product-section-bg.jpg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.productSectionText {
+    position: relative;
+}
+
+.productCardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.productCardWrapper {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    max-width: 887px;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    right: -40px;
+    top: -58px;
+}
+
+.productCardWrapper .productCardContainer:nth-of-type(1) {
+    position: relative;
+    top: 78px;
+}
+
+.productCard {
+    padding: 10px 10px 23px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+    display: block;
+    background-color: #FFF;
+}
+
+.productCard .img_wrap {
+    margin-bottom: 16px;
+}
+
+@media (min-width: 1220px) {
+    .productCard {
+        max-width: 430px;
+        width: 100%;
+        min-height: 465px;
+    }
+}
+
+/* Product end */
+
+/* Support Start */
+
+.supportCard:hover a {
+    color: var(--clr-primary);
+}
+
+.supportCard {
+    padding-block: 30px;
+    gap: 40px;
+}
+
+.supportCard:nth-child(even) {
+    border-block: 1px solid #CECECE;
+}
+
+.supportCard a {
+    margin-bottom: 15px;
+}
+
+/* Support end */
+
+/**---Footer start ---*/
+footer {
+    padding: 65px 0 40px;
+}
+
+
+
+footer .logo {
+    width: 160px;
+    height: 20px;
+}
+
+.footer__title {
+    font-size: var(--fs-12);
+    color: #000;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin-bottom: 1.3rem;
+}
+
+.footer_list li a {
+    font-size: var(--fs-12);
+    color: var(--clr-grey-800);
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.footer_list li {
+    margin-bottom: 3px;
+}
+
+.footerIcons li a {
+    font-size: 22px;
+    color: var(--clr-grey-800);
+}
+
+footer a:hover {
+    color: var(--clr-accent);
+}
+
+/**---Footer end ---*/

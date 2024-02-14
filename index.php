@@ -122,6 +122,157 @@ include("includes/site-info.php");
 	</section>
 	<!--==== Good Company end ====-->
 
+	<!--==== Product Section start ====-->
+	<section class="productSection">
+		<div class="container container-large position-relative">
+			<div class="d-flex align-items-center">
+				<div class="productSectionText">
+					<h4 class="section_heading">Product that simplifying work
+						from tendering to close out.</h4>
+					<a href="" class="primary-link-button">See All Products <i class="arrow-right-icon-green"></i></a>
+				</div>
+				<div class="productCardWrapper">
+					<div class="productCardContainer">
+						<div class="productCard">
+							<div class="img_wrap">
+								<img src="assets/images/product-1.jpg" alt="Reload Page">
+							</div>
+							<div class="productCardText">
+								<h6 class="fs-25 fw-600 lh-normal fc-black mb-3">Project Management</h6>
+								<p class="mb-2 fs-18">Stay on schedule and within budget. Track construction progress in real time. Digital tools to accurately predict your project completion date and highlight risk areas.... </p>
+								<a href="" class="secondary-link-button text-end w-100 justify-content-end pe-1">
+									Learn More <i class="arrow-right-icon-purple"></i>
+								</a>
+							</div>
+						</div>
+						<div class="productCard">
+							<div class="img_wrap">
+								<img src="assets/images/product-2.jpg" alt="Reload Page">
+							</div>
+							<div class="productCardText">
+								<h6 class="fs-25 fw-600 lh-normal fc-black mb-3">Workforce Management</h6>
+								<p class="mb-2 fs-18">We turbocharge your construction sites to ensure your workforce isn’t just clocking in but is highly engaged, actively contributing and well incentivised... </p>
+								<a href="" class="secondary-link-button text-end w-100 justify-content-end pe-1">
+									Learn More <i class="arrow-right-icon-purple"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="productCardContainer">
+						<div class="productCard">
+							<div class="img_wrap">
+								<img src="assets/images/product-3.jpg" alt="Reload Page">
+							</div>
+							<div class="productCardText">
+								<h6 class="fs-25 fw-600 lh-normal fc-black mb-3">Financial Management</h6>
+								<p class="mb-2 fs-18">Have a birds eye view of your project’s financial health. View your cashflows and projected costs against budget, mitigate financial risks with real time data and protect your....</p>
+								<a href="" class="secondary-link-button text-end w-100 justify-content-end pe-1">
+									Learn More <i class="arrow-right-icon-purple"></i>
+								</a>
+							</div>
+						</div>
+						<div class="productCard">
+							<div class="img_wrap">
+								<img src="assets/images/product-4.jpg" alt="Reload Page">
+							</div>
+							<div class="productCardText">
+								<h6 class="fs-25 fw-600 lh-normal fc-black mb-3">Construction Intelligence</h6>
+								<p class="mb-2 fs-18">Your data is your most powerful ally. Turn your project information into meaningful, actionable insights that will guide your business.</p>
+								<a href="" class="secondary-link-button text-end w-100 justify-content-end pe-1">
+									Learn More <i class="arrow-right-icon-purple"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--==== Product Section end ====-->
+
+	<!--==== Support Section start ====-->
+	<section class="supportSection">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6">
+					<h4 class="section_heading">Support Beyond Software that
+						Only We Provide</h4>
+					<a href="" class="primary-link-button fs-18">Get a Personalised Demo <i class="arrow-right-icon-green"></i></a>
+				</div>
+				<div class="col-lg-5">
+					<ul class="supportList list-unstyled">
+						<li class="supportCard d-flex align-items-center">
+							<img class="flex-shrink-0" src="assets/images/support-icon-1.png" alt="Reload Page">
+							<div class="text_wrap">
+								<a class="fs-25 fw-600 fc-black lh-normal d-flex align-items-center gap-3">
+									24/7 Customer Support
+									<i class="arrow-right-icon-black"></i>
+								</a>
+								<p>Connect with a real bettamint expert via email, chat, or phone support in less than a minute.</p>
+							</div>
+						</li>
+						<li class="supportCard d-flex align-items-center">
+							<img class="flex-shrink-0" src="assets/images/support-icon-2.png" alt="Reload Page">
+							<div class="text_wrap">
+								<a class="fs-25 fw-600 fc-black lh-normal d-flex align-items-center gap-3">
+									Seamless Integrations
+									<i class="arrow-right-icon-black"></i>
+								</a>
+								<p>Connect to 500+ out-of-the-box integrations you already use
+									and love in the bettamint App Marketplace.</p>
+							</div>
+						</li>
+						<li class="supportCard d-flex align-items-center">
+							<img class="flex-shrink-0" src="assets/images/support-icon-3.png" alt="Reload Page">
+							<div class="text_wrap">
+								<a class="fs-25 fw-600 fc-black lh-normal d-flex align-items-center gap-3">
+									Community of Peers
+									<i class="arrow-right-icon-black"></i>
+								</a>
+								<p>Connect, learn, inspire and grow your online community with Groundbreakers like you around the world.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--==== Support Section end ====-->
+
+	<!--==== Future Section start ====-->
+	<section class="futureSection bg-black">
+		<div class="container">
+			<div class="section_text small text-center mx-auto">
+				<h4 class="section_heading text-white">Building a better future, for the people on
+					the frontlines building India</h4>
+				<a href="#" class="primary-link-button fs-18">Get a Personalised Demo <i class="arrow-right-icon-green"></i></a>
+			</div>
+
+		</div>
+	</section>
+	<!--==== Future Section end ====-->
+
+	<!--==== CTA Section Start ====-->
+	<section class="ctaSection bg-black">
+		<div class="container py-lg-4">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-4">
+					<h4 class="section_heading fc-white mb-2">Get started today</h4>
+					<p class="mb-3 pe-lg-5">If you can send an email, you can use bettamint.
+						Building better is really that simple.</p>
+					<a href="#" class="btn btn-primary">Request a Demo</a>
+				</div>
+				<div class="col-auto">
+					<div class="img_wrap">
+						<img src="assets/images/cta-image.png" alt="Reload Page">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--==== CTA Section End ====-->
+
+
 
 	<!--==== FOOTER START ====-->
 	<?php include('includes/footer.php') ?>
