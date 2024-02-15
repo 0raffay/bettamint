@@ -5,5 +5,6 @@
 
 
     <!-- local files start =-->
+    <script src="assets/js/functions.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- local files end =-->
