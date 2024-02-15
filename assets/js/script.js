@@ -25,4 +25,5 @@ function validateNumberinputs() {
       $(this).val($(this).val().replace(/[^1-9]/g, ''));
     }
   });
+  
 }

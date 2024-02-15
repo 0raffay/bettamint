@@ -1,13 +1,15 @@
 <footer>
   <div class="container">
     <div class="row">
-
       <!-- top footer -->
-      <div class="col-md-8 col-lg-5 col-xl-5 mx-auto mb-5">
+      <div class="col-md-8 col-lg-5 col-xl-5 mx-auto">
         <div class="img_wrap logo mb-4">
           <img src="assets/images/logo-black.png" alt="Logo">
         </div>
-        <p class="fs-12 lh-1-3 lt-0 fw-400 mb-4 pe-lg-5">Bettamint is committed to advancing the construction industry by improving the lives of people working in construction, driving technology innovation, and building a global community of groundbreakers. Our connected global construction platform unites all stakeholders on a project with unlimited access to support and a business model designed for the construction industry.</p>
+        <p class="fs-13 lh-1-3 lt-0 fw-400 mb-4 pe-lg-5">Bettamint is a digital ecosystem transforming frontline workforce management
+          for the construction industry. We power developers and contractors with the tools
+          and resources needed to fast-track their projects, through an engaged, incentivised,
+          and productive workforce.</p>
 
         <ul class="footerIcons d-flex align-items-center gap-15 list-unstyled">
           <li><a href=""><i class="ri-linkedin-box-fill"></i></a></li>
@@ -19,31 +21,30 @@
       </div>
       <div class="col-md-8 col-lg-2 col-xl-2 mx-auto">
         <div class="footerlistContainer">
-          <h6 class="footer__title">New to Procore?</h6>
+          <h6 class="footer__title">New to Bettamint?</h6>
           <ul class="footer_list list-unstyled">
-            <li><a href="">What is Procore?</a></li>
-            <li><a href="">Procore Platform</a></li>
-            <li><a href="">Product Updates</a></li>
-            <li><a href="">ROI</a></li>
-            <li><a href="">Trust &amp; Security</a></li>
-            <li><a href="">App Marketplace</a></li>
-            <li><a href="">Developers / API</a></li>
-            <li><a href="">Jobsite Industry News</a></li>
+            <li><a href="">What is Bettamint?</a></li>
+            <li><a href="">Project Management</a></li>
+            <li><a href="">Workforce Management</a></li>
+            <li><a href="">Financial Management</a></li>
+            <li><a href="">Construction Intelligence</a></li>
+            <li><a href="">Who We Serve</a></li>
+            <li><a href="">Success Stories of Clients</a></li>
           </ul>
         </div>
       </div>
       <div class="col-md-8 col-lg-2 col-xl-2 mx-auto">
         <div class="footerlistContainer">
-          <h6 class="footer__title">About Procore</h6>
+          <h6 class="footer__title">About Bettamint</h6>
           <ul class="footer_list list-unstyled">
-            <li><a href="">Our Story</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Investors</a></li>
-            <li><a href="">Legal</a></li>
+            <li><a href="">About Us</a></li>
             <li><a href="">Newsroom</a></li>
-            <li><a href="">procre.org</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Latest Updates</a></li>
+            <li><a href="">Media Kit</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Internship Program</a></li>
+            <li><a href="">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -58,18 +59,20 @@
       </div>
 
       <!-- bottom footer -->
-      <div class="mt-4 mt-md-5 col-12  col-xl-5 mx-auto d-flex align-items-center justify-content-between  mx-md-0 flex-column flex-md-row">
-        <p class="fs-12 mb-3 mb-md-0">© 2023 Bettamint Technologies, Inc.</p>
-        <ul class="d-flex list-unstyled">
-          <li class="border-right">
-            <a href="" class="fs-12 fc-grey-800">Privacy Notice</a>
-          </li>
-          <li>
-            <a href="" class="fs-12 fc-grey-800">Terms Of Services</a>
-          </li>
-        </ul>
+      <div class="d-flex align-items-center justify-content-between mt-5">
+        <div class="footerTerms">
+          <ul class="footerTermList">
+            <li><a href="#">User Agreement</a></li>
+            <li><a href="#">Worker Services Agreement</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <span>bettamint.com © 2024 All rights reserved.</span>
+        </div>
+        <div class="footerLogo">
+          <img src="assets/images/logo-green.png" alt="Reload Page">
+        </div>
       </div>
-
     </div>
   </div>
 </footer>
