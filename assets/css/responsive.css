@@ -35,15 +35,27 @@
         bottom: -220px;
     }
 
-    .banner:has(.bannerMainImage) .bannerImage img {
-        min-height: 1220px;
+    .bannerWithMainImage {
+        overflow: hidden;
+    }
+
+    .bannerWithMainImage [class*="prop"]::after {
+        scale: .7;
+        right: -40px;
+        bottom: 40px;
+    }
+
+    .bannerWithMainImage .prop-bottom-left::after {
+        left: -70px;
+        right: unset;
     }
 }
 
 @media only screen and (max-width: 1440px) {
     .storySliderCard {
         align-items: center;
-        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
     }
 
     .storyWrapper {
@@ -70,11 +82,24 @@
         left: 20%;
     }
 
-    .banner.prop-bottom-left::before,
     img[class*="prop"],
     [class*="prop"]::after {
         display: none;
     }
+
+    .banner {
+        --controller: 0px;
+    }
+
+    .bannerImage img {
+        min-height: 641px;
+    }
+
+    .bannerMainImageContainer {
+        --offset: 240px;
+        max-height: 640px;
+    }
+
 }
 
 @media only screen and (max-width: 1366px) {
@@ -136,6 +161,11 @@
         gap: 20px;
     }
 
+    .bannerMainImageContainer {
+        --offset: 240px;
+        max-height: 640px;
+    }
+
 }
 
 @media only screen and (max-width: 1220px) {
@@ -147,6 +177,15 @@
 
     .storySlider .slick-dots {
         left: 0;
+    }
+
+    .storySliderCard {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .bannerMainImageContainer img {
+        top: -160px;
     }
 }
 
@@ -179,9 +218,6 @@
         margin-right: 10px !important;
     }
 
-    .banner:has(.bannerMainImage) .bannerImage img {
-        min-height: 600px;
-    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -268,6 +304,11 @@
 @media only screen and (max-width: 480px) {
     :root {
         --font-controller: 3.5px;
+    }
+
+    .bannerMainImageContainer {
+        --offset: 240px;
+        max-height: 150px;
     }
 }
 

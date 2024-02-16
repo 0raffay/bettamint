@@ -28,23 +28,27 @@ include("includes/site-info.php");
 	<!--==== HEADER END ====-->
 
 	<!--==== Banner start ====-->
-	<section class="banner bg-black prop-bottom-left">
-		<div class="bannerImage">
-			<img src="assets/images/banners/project-management.jpg" alt="Hero Banner">
-		</div>
-		<div class="bannerTextContainer">
-			<div class="container">
-				<div class="bannerText mx-auto text-center">
-					<h6 class="bannerLabel">CONSTRUCTION MANAGEMENT SOFTWARE</h6>
-					<h1 class="bannerTitle">Project Management</h1>
-					<p class="bannerSubtitle small">Stay on schedule and within budget. Track construction progress in real time. Digital tools to accurately predict your project completion date and highlight risk areas.</p>
-					<div class="d-flex align-items-center gap-3 justify-content-center">
-						<a href="#" class="btn btn-secondary">Sign Up Now</a>
-						<a href="#" class="btn btn-primary">Request a Demo</a>
+	<section class="banner bg-black bannerWithMainImage">
+		<div class="position-relative prop-bottom-left">
+			<div class="bannerImage">
+				<img src="assets/images/banners/home-banner.png" alt="Hero Banner">
+			</div>
+			<div class="bannerTextContainer">
+				<div class="container">
+					<div class="bannerText mx-auto text-center">
+						<h6 class="bannerLabel">CONSTRUCTION MANAGEMENT SOFTWARE</h6>
+						<h1 class="bannerTitle">Project Management</h1>
+						<p class="bannerSubtitle small">Stay on schedule and within budget. Track construction progress in real time. Digital tools to accurately predict your project completion date and highlight risk areas.</p>
+						<div class="d-flex align-items-center gap-3 justify-content-center">
+							<a href="#" class="btn btn-secondary">Sign Up Now</a>
+							<a href="#" class="btn btn-primary">Request a Demo</a>
+						</div>
 					</div>
 				</div>
-				<img class="bannerMainImage" src="assets/images/product-management-image.png" alt="Reload Page">
 			</div>
+		</div>
+		<div class="bannerMainImageContainer text-center prop-bottom-right prop-sm">
+			<img class="bannerMainImage" src="assets/images/product-management-image.png" alt="Reload Page">
 		</div>
 	</section>
 	<!--==== Banner end ====-->

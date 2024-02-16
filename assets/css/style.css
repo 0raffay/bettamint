@@ -371,7 +371,7 @@ label {
 }
 
 /* left || Right Sided Containers */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1400px) {
     .container-left {
         --container-size: 1366px;
         margin-inline: auto;
@@ -675,7 +675,7 @@ label {
     background-color: #F4F5F6;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1400px) {
     .bg-grey-image {
         background-image: url(../images/grey-bg-img.png);
         background-position: center;
@@ -688,7 +688,7 @@ label {
         background-position: right;
         background-repeat: no-repeat;
     }
-} 
+}
 
 
 /* BACKGROUNDS END */
@@ -1081,11 +1081,7 @@ i.icon.arrow-down::after {
 }
 
 .bannerImage img {
-    min-height: 600px;
-}
-
-.banner:has(.bannerMainImage) .bannerImage img {
-    min-height: 840px;
+    min-height: 1080px;
 }
 
 .bannerTextContainer {
@@ -1107,7 +1103,6 @@ i.icon.arrow-down::after {
     font-size: var(--fs-14);
     line-height: auto;
     color: #FFF;
-    /* text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); */
     font-weight: 400;
     margin-bottom: 8px;
 }
@@ -1180,6 +1175,87 @@ i.icon.arrow-down::after {
 
 .bannerToggleButton:is(:hover, :focus, :active) .dot {
     bottom: calc(100% - 24px);
+}
+
+
+/* Prop elements */
+.prop {
+    position: absolute;
+    z-index: 1;
+}
+
+.prop-top-left {
+    top: 0;
+    left: 0;
+}
+
+.prop-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Prop elements */
+
+/* Prop css */
+[class*="prop"]:not(img) {
+    position: relative;
+    --prop-url: url(../images/prop-lg.png);
+}
+
+.prop-xs {
+    --prop-url: url(../images/prop-xs.png) !important;
+}
+
+.prop-sm {
+    --prop-url: url(../images/prop-sm.png) !important;
+}
+
+.prop-lg {
+    --prop-url: url(../images/prop-lg.png) !important;
+}
+
+[class*="prop"]::after {
+    position: absolute;
+    content: var(--prop-url);
+    z-index: 1;
+}
+
+.prop-bottom-left::after {
+    bottom: -3%;
+    left: 0;
+
+}
+
+.prop-bottom-right::after {
+    bottom: -25%;
+    right: 0;
+}
+
+.prop-top-right::after {
+    top: -25%;
+    right: 0;
+}
+
+/* Prop css */
+
+
+/* Banner with main image */
+.bannerMainImageContainer {
+    --offset: 430px;
+    max-height: calc(var(--offset) + 100px);
+}
+
+.bannerMainImageContainer img {
+    position: relative;
+    top: calc(var(--offset) * -1);
+}
+
+.bannerWithMainImage {
+    --controller: 88px;
+}
+
+.bannerWithMainImage .prop-bottom-left {
+    --prop-url: url(../images/banner-with-image-prop.png) !important;
 }
 
 /* Banner end */
@@ -1316,7 +1392,7 @@ i.icon.arrow-down::after {
 /* Support end */
 
 /* news start */
-@media (min-width: 1201px) {
+@media (min-width: 1400px) {
     .newsSection .container {
         max-width: 1575px;
     }
@@ -1373,7 +1449,7 @@ i.icon.arrow-down::after {
     top: -15%;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1400px) {
     .futureSection .container {
         max-width: 1440px;
     }
@@ -1448,7 +1524,7 @@ i.icon.arrow-down::after {
     bottom: -50%;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1400px) {
     .ctaSection .container {
         max-width: 1237px;
         width: 100%;
@@ -1676,80 +1752,6 @@ footer a:hover {
 
 
 /*--Story end ---*/
-
-/* Prop elements */
-.prop {
-    position: absolute;
-    z-index: 1;
-}
-
-.prop-top-left {
-    top: 0;
-    left: 0;
-}
-
-.prop-bottom-right {
-    bottom: 0;
-    right: 0;
-}
-
-/* Prop elements */
-
-/* Prop css */
-[class*="prop"]:not(img) {
-    position: relative;
-    --prop-url: url(../images/prop-lg.png);
-}
-
-.prop-xs {
-    --prop-url: url(../images/prop-xs.png) !important;
-}
-
-.prop-sm {
-    --prop-url: url(../images/prop-sm.png) !important;
-}
-
-.prop-lg {
-    --prop-url: url(../images/prop-lg.png) !important;
-}
-
-[class*="prop"]::after {
-    position: absolute;
-    content: var(--prop-url);
-    z-index: 1;
-}
-
-.prop-bottom-left::after {
-    bottom: -3%;
-    left: 0;
-
-}
-
-.prop-bottom-right::after {
-    bottom: -25%;
-    right: 0;
-}
-
-.prop-top-right::after {
-    top: -25%;
-    right: 0;
-}
-
-/* Prop css */
-
-
-/* Banner with main image */
-.banner.prop-bottom-left::after {
-    left: -4%;
-    bottom: 31%;
-}
-
-.banner.prop-bottom-left::before {
-    position: absolute;
-    right: 0%;
-    bottom: -11%;
-    content: url(../images/prop-sm.png);
-}
 
 /* panel section */
 .panelSection p {
