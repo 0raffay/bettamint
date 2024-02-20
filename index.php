@@ -54,59 +54,59 @@ include("includes/site-info.php");
 	</section>
 	<!--==== Banner end ====-->
 
-	<!--==== Solutions start ====-->
-	<section class="solutionsSection bg-black prop-bottom-right prop-sm" id="solutions">
-		<div class="container pb-md-5">
-			<div class="row row-gap-3 row-gap-md-4 row-gap-lg-5">
-				<div class="col-xl-6">
-					<h4 class="section_heading fc-white">Solutions Purpose-built <br>
-						for you</h4>
-					<p class="fs-18">Step into the forefront of innovation alongside the titans of the trade. Bettamint is where the construction industry converges and collaborates to shape the future of workforce management.</p>
-				</div>
+<!--==== Solutions start ====-->
+<section class="solutionsSection bg-black prop-bottom-right prop-sm" id="solutions">
+	<div class="container pb-md-5">
+		<div class="row row-gap-3 row-gap-md-4 row-gap-lg-5">
+			<div class="col-xl-6">
+				<h4 class="section_heading fc-white">Solutions Purpose-built <br>
+					for you</h4>
+				<p class="fs-18">Step into the forefront of innovation alongside the titans of the trade. Bettamint is where the construction industry converges and collaborates to shape the future of workforce management.</p>
+			</div>
 
-				<div class="col-sm-12 col-md-12 col-xl-6">
-					<div class="horizontalCard d-flex align-items-xl-center flex-column flex-lg-row">
-						<div class="img_wrap flex-shrink-0">
-							<img src="assets/images/developers.jpg" alt="Reload Page">
-						</div>
-						<div class="text_wrap">
-							<h6 class="fw-600 fs-30 lh-normal fc-white mb-2 mb-md-3">Developers</h6>
-							<p class="fw-400 fs-22 mb-2 mb-md-3">Take control with visibility every
-								step of the way</p>
-							<a href="" class="fc-primary fw-600 fs-22 no-hover-black hover-underline">More Details <i class="fa-solid fa-arrow-right-long fs-18 ms-2 ms-lg-3"></i></a>
-						</div>
+			<div class="col-sm-12 col-md-12 col-xl-6">
+				<div class="horizontalCard d-flex align-items-xl-center flex-column flex-lg-row">
+					<div class="img_wrap flex-shrink-0">
+						<img src="assets/images/developers.jpg" alt="Reload Page">
+					</div>
+					<div class="text_wrap">
+						<h6 class="fw-600 fs-30 lh-normal fc-white mb-2 mb-md-3">Developers</h6>
+						<p class="fw-400 fs-22 mb-2 mb-md-3">Take control with visibility every
+							step of the way</p>
+						<a href="" class="fc-primary fw-600 fs-22 no-hover-black hover-underline">More Details <i class="fa-solid fa-arrow-right-long fs-18 ms-2 ms-lg-3"></i></a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-xl-6">
-					<div class="horizontalCard d-flex flex-column flex-xl-row align-items-center">
-						<div class="img_wrap flex-shrink-0">
-							<img src="assets/images/general-contractors.jpg" alt="Reload Page">
-						</div>
-						<div class="text_wrap">
-							<h6 class="fw-600 fs-30 lh-normal fc-white mb-2 mb-md-3">General Contractors</h6>
-							<p class="fw-400 fs-22 mb-2 mb-md-3">Deliver on time and on budget from
-								the palm of your hand</p>
-							<a href="" class="fc-primary fw-600 fs-22 no-hover-black hover-underline">More Details <i class="fa-solid fa-arrow-right-long fs-18 ms-2 ms-lg-3"></i></a>
-						</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-xl-6">
+				<div class="horizontalCard d-flex flex-column flex-xl-row align-items-center">
+					<div class="img_wrap flex-shrink-0">
+						<img src="assets/images/general-contractors.jpg" alt="Reload Page">
+					</div>
+					<div class="text_wrap">
+						<h6 class="fw-600 fs-30 lh-normal fc-white mb-2 mb-md-3">General Contractors</h6>
+						<p class="fw-400 fs-22 mb-2 mb-md-3">Deliver on time and on budget from
+							the palm of your hand</p>
+						<a href="" class="fc-primary fw-600 fs-22 no-hover-black hover-underline">More Details <i class="fa-solid fa-arrow-right-long fs-18 ms-2 ms-lg-3"></i></a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-xl-6">
-					<div class="horizontalCard d-flex flex-column flex-xl-row align-items-center">
-						<div class="img_wrap flex-shrink-0">
-							<img src="assets/images/sub-contractors.jpg" alt="Reload Page">
-						</div>
-						<div class="text_wrap">
-							<h6 class="fw-600 fs-30 lh-normal fc-white mb-2 mb-md-3">Sub Contractors</h6>
-							<p class="fw-400 fs-22 mb-2 mb-md-3">Connect your teams from site to
-								office in real time</p>
-							<a href="" class="fc-primary fw-600 fs-22 no-hover-black hover-underline">More Details <i class="fa-solid fa-arrow-right-long fs-18 ms-2 ms-lg-3"></i></a>
-						</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-xl-6">
+				<div class="horizontalCard d-flex flex-column flex-xl-row align-items-center">
+					<div class="img_wrap flex-shrink-0">
+						<img src="assets/images/sub-contractors.jpg" alt="Reload Page">
+					</div>
+					<div class="text_wrap">
+						<h6 class="fw-600 fs-30 lh-normal fc-white mb-2 mb-md-3">Sub Contractors</h6>
+						<p class="fw-400 fs-22 mb-2 mb-md-3">Connect your teams from site to
+							office in real time</p>
+						<a href="" class="fc-primary fw-600 fs-22 no-hover-black hover-underline">More Details <i class="fa-solid fa-arrow-right-long fs-18 ms-2 ms-lg-3"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--==== Solutions end ====-->
+	</div>
+</section>
+<!--==== Solutions end ====-->
 
 	<!--==== Good Company start ====-->
 	<?php include('sections/good-company-section.php'); ?>
@@ -240,14 +240,6 @@ include("includes/site-info.php");
 	<!--==== news Section start ====-->
 	<?php include("sections/news-section.php"); ?>
 	<!--==== news Section end ====-->
-
-	<!--==== Future Section start ====-->
-	<?php include('sections/future-section.php'); ?>
-	<!--==== Future Section end ====-->
-
-	<!--==== CTA Section Start ====-->
-	<?php include('sections/cta-section.php'); ?>
-	<!--==== CTA Section End ====-->
 
 	<!--==== FOOTER START ====-->
 	<?php include('includes/footer.php'); ?>

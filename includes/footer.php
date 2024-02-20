@@ -1,3 +1,12 @@
+<!--==== Future Section start ====-->
+<?php include('sections/future-section.php'); ?>
+<!--==== Future Section end ====-->
+
+<!--==== CTA Section Start ====-->
+<?php include('sections/cta-section.php'); ?>
+<!--==== CTA Section End ====-->
+
+
 <footer>
 	<div class="container">
 		<div class="evenColumns flex-wrap">

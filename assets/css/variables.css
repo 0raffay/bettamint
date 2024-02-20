@@ -2,8 +2,10 @@
     --ff-primary: "Roboto", sans-serif;
     /* --ff-secondary: 'Ariel', sans-serif; */
 
+    --clr-primary-300: rgba(190, 217, 151, 1);
     --clr-primary: #81B734;
     --clr-secondary: #A179F2;
+    --clr-secondary-300: rgba(241, 225, 247, 1);
 
 
     --clr-grey-400: #FAFAFA;

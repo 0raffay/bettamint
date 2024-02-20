@@ -69,7 +69,24 @@ function sliders() {
       },
     });
     latestNewsSider.mount(window.splide.Extensions);
+
+    const newsLogoSlider = document.getElementById("newsLogoSlider");
+    if (newsLogoSlider) {
+      const newsLogoSlider = new Splide(latestNewsSliderSection, {
+        autoWidth: true,
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 3,
+        gap: '2rem',
+        pagination: false,
+        arrows: false,
+        autoScroll: {
+          speed: 1,
+        },
+      });
+      newsLogoSlider.mount(window.splide.Extensions);
+    }
   }
+
 }
-
-
