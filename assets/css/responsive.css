@@ -315,6 +315,16 @@
     .footer__title {
         margin-bottom: 15px;
     }
+
+    .aboutCard {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    .aboutCardText {
+        padding-bottom: 20px;
+        padding-inline: 10px;
+    }
 }
 
 @media only screen and (max-width: 580px) {}

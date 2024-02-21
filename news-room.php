@@ -53,7 +53,7 @@ include("includes/site-info.php");
 
   <!--====Latst Blog start ====-->
   <section class="latestBlogSection">
-    <div class="container container-large pb-lg-5">
+    <div class="container container-large">
       <div class="row justify-content-between mb-lg-5 mb-3">
         <div class="col-lg-auto">
           <h4 class="fs-25 fw-600 lh-1-5 fc-black">Latest From The Blog</h4>
@@ -135,7 +135,7 @@ include("includes/site-info.php");
         </div>
       </div>
 
-      <div class="splide" id="newsLogoSlider">
+      <div class="newsLogoSlider splide section-padding" id="newsLogoSlider">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
@@ -174,6 +174,29 @@ include("includes/site-info.php");
     </div>
   </section>
   <!--====Latst Blog end ====-->
+
+  <!--==== Recent Posts start ====-->
+  <section class="recentPostsSection">
+    <div class="container">
+      <div class="section_text mb-4 mb-lg-5 text-center">
+        <h6 class="purple_label mb-1">News & Updates</h6>
+        <h4 class="section_heading">Our Community</h4>
+      </div>
+
+      <div class="row justify-content-center flex-lg-nowrap align-items-center">
+        <div class="col-md-4">
+          <img src="assets/images/recent-post-1.jpg" alt="reload Page">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/recent-post-2.png" alt="reload Page">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/recent-post-3.jpg" alt="reload Page">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--==== Recent Posts end ====-->
 
 
 

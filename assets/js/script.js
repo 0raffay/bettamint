@@ -53,6 +53,36 @@ function sliders() {
     fade: true,
   })
 
+  $(".bannerSlider").slick({
+    dots: true,
+  })
+
+  $(".aboutSlider").slick({
+    dots: true,
+    variableWidth: true,
+    centerMode: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          centerMode: false,
+          variableWidth: false,
+        }
+      },
+    ]
+  })
+
+  $(".companySlider").slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    speed: 500,
+  })
+
   const latestNewsSliderSection = document.getElementById("latestNewsSlider");
   if (latestNewsSliderSection) {
     const latestNewsSider = new Splide(latestNewsSliderSection, {
@@ -70,9 +100,9 @@ function sliders() {
     });
     latestNewsSider.mount(window.splide.Extensions);
 
-    const newsLogoSlider = document.getElementById("newsLogoSlider");
-    if (newsLogoSlider) {
-      const newsLogoSlider = new Splide(latestNewsSliderSection, {
+    const newsLogoSliderSection = document.getElementById("newsLogoSlider");
+    if (newsLogoSliderSection) {
+      const newsLogoSlider = new Splide(newsLogoSliderSection, {
         autoWidth: true,
         type: 'loop',
         drag: 'free',

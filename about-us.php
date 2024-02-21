@@ -49,7 +49,7 @@ include("includes/site-info.php");
   </section>
   <!--==== Banner end ====-->
   <!--==== Solutions start ====-->
-  <section class="solutionsSection bg-black prop-bottom-right prop-sm" id="solutions">
+  <section class="solutionsSection bg-black prop-bottom-right prop-sm pt-0" id="solutions">
     <div class="container pb-md-5">
       <div class="section_text mb-4 mb-lg-5 pb-lg-3">
         <h4 class="section_heading fc-white text-center">Explore our solutions for</h4>
@@ -115,36 +115,171 @@ include("includes/site-info.php");
 
   <section class="panelSection">
     <div class="container container-large">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-lg-0 mb-4">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6">
+          <img src="assets/images/about-1.png" alt="Reload Page">
+        </div>
+        <div class="col-lg-5 mb-lg-0 mb-4">
           <h6 class="purple_label mb-2">WE HELP BUILD BETTER</h6>
           <h4 class="section_heading mb-3">We build technology that moves
             the industry forward</h4>
-          <p class="fs-18 mb-3">We’re shaking things up in the construction world. Tired of hearing that construction is always a step behind in tech? So are we! That's why we're here – bringing in cool tech that not only gets the job done but also boosts your profits, keeps your data safe, and makes your team super productive.</p>
-        </div>
-        <div class="col-lg-6">
-          <img src="assets/images/pm-2.png" alt="Reload Page">
+          <p class="fs-18">We’re shaking things up in the construction world. Tired of hearing that construction is always a step behind in tech? So are we! That's why we're here – bringing in cool tech that not only gets the job done but also boosts your profits, keeps your data safe, and makes your team super productive.</p>
         </div>
       </div>
+    </div>
   </section>
 
-  <!--==== Counter Section Start ====-->
-  <?php
-  $counter_section_heading = "Support your core business <br>
-  with real ROI data.";
-  $count_1 = "53% ";
-  $count_1_text = " of developers say their existing teams can manage more projects with Bettamint.";
-  $count_2 = "89%";
-  $count_2_text = "of owners say they have more protection from litigation with Bettamint";
-  $count_3 = "86%";
-  $count_3_text = "of developers say Bettamint helps document processes across all projects.";
-  include("sections/counter-section.php");
-  ?>
-  <!--==== Counter Section end ====-->
+  <section class="panelSection">
+    <div class="container container-large">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5 mb-lg-0 mb-4">
+          <h6 class="purple_label mb-2">BUT THAT’S NOT ALL</h6>
+          <h4 class="section_heading mb-3">We care about people, all people</h4>
+          <p class="fs-18">We're in a world that's digitizing faster than ever, and we believe everyone should be part of this journey. Especially in emerging economies, it's clear that the true builders – the hardworking people on the ground – haven't fully reaped the benefits of the construction industry's growth. Digital advancements, while remarkable, are often creating gaps rather than bridges. At Bettamint, we’re committed to offering every daily wage earner a chance for a brighter future by delivering a steady and abundant supply of income opportunities and enhancing their participation in the digital economy. Making sure no one is left behind, as we all move foreward.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/images/about-2.png" alt="Reload Page">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!--==== Solution Card Section start ====-->
-  <?php include("sections/solution-card-section.php"); ?>
-  <!--==== Solution Card Section end ====-->
+  <!--  About Bettamint Start  -->
+  <section class="aboutSection">
+    <div class="container-fluid px-lg-0 overflow-hidden">
+      <div class="section_text small mx-auto mb-4 mb-lg-5 text-center">
+        <h6 class="purple_label">About Bettamint</h6>
+        <h4 class="section_heading">We celebrate the possibilities of making the world a better place for all.</h4>
+        <p class="fs-18 fw-400 fc-black">We leverage technology and the power of scale to bring digital products and services that are necessary and affordable for daily wage earners, while maximising income for all customers.
+        </p>
+      </div>
+      <div class="aboutSlider dots-variant-1">
+        <div class="item">
+          <a class="aboutCard d-block position-relative">
+            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <div class="aboutCardText position-absolute">
+              <h6>Social Equity</h6>
+              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="aboutCard d-block position-relative">
+            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <div class="aboutCardText position-absolute">
+              <h6>Social Equity</h6>
+              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="aboutCard d-block position-relative">
+            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <div class="aboutCardText position-absolute">
+              <h6>Social Equity</h6>
+              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="aboutCard d-block position-relative">
+            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <div class="aboutCardText position-absolute">
+              <h6>Social Equity</h6>
+              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="aboutCard d-block position-relative">
+            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <div class="aboutCardText position-absolute">
+              <h6>Social Equity</h6>
+              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="aboutCard d-block position-relative">
+            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <div class="aboutCardText position-absolute">
+              <h6>Social Equity</h6>
+              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  About Bettamint End  -->
+
+
+  <!-- Comapny Logo Slider End  -->
+  <section class="companySliderSection">
+    <div class="container py-md-5">
+      <div class="section_text mb-4 mb-lg-5 pb-lg-3 text-center small mx-auto">
+        <h4 class="section_heading lh-1 mb-3">Fueling our Innovation</h4>
+        <p>Our invaluable partners play a significant role in enabling us to deliver solutions of the highest caliber that consistently drive impactful results for our clients. Each partnership amplifies our resolve to transform and streamline the building process, fostering an environment of innovation and excellence.</p>
+      </div>
+
+
+      <div class="companySlider dots-variant-1">
+        <div class="item">
+          <ul class="row align-items-center text-center px-3 px-md-0">
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/1.png" width="168" height="36" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/2.png" width="130" height="75" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/3.png" width="200" height="28" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/4.png" width="210" height="81" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/5.png" width="200" height="47" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-0 mb-sm-5">
+              <img src="assets/images/slider-logo/6.png" width="200" height="62" alt="Reload Page">
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <ul class="row align-items-center text-center px-3 px-md-0">
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/1.png" width="168" height="36" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/2.png" width="130" height="75" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/3.png" width="200" height="28" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/4.png" width="210" height="81" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-5">
+              <img src="assets/images/slider-logo/5.png" width="200" height="47" alt="Reload Page">
+            </li>
+            <li class="col-sm-6 col-lg-4 px-3 px-sm-0 mb-0 mb-sm-5">
+              <img src="assets/images/slider-logo/6.png" width="200" height="62" alt="Reload Page">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Comapny Logo Slider End  -->
 
 
 

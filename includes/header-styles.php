@@ -2,7 +2,6 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <!-- favicon end -->
 
-
     <!-- icons start -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"> -->
 
@@ -16,17 +15,10 @@
     <!-- fonts end -->
 
     <!-- Splide Slider -->
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
-"></script>
-    <link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <!-- Splide Slider -->
-
 
     <!-- local files start -->
     <link rel="stylesheet" href="assets/css/style.css">
