@@ -143,7 +143,13 @@ include("includes/site-info.php");
   <!--==== Blog End ====-->
 
 
+<!--==== Future Section start ====-->
+<?php include('sections/future-section.php'); ?>
+<!--==== Future Section end ====-->
 
+<!--==== CTA Section Start ====-->
+<?php include('sections/cta-section.php'); ?>
+<!--==== CTA Section End ====-->
   <!--==== FOOTER START ====-->
   <?php include('includes/footer.php'); ?>
   <!--==== FOOTER END ====-->

@@ -39,10 +39,7 @@ include("includes/site-info.php");
 						<h6 class="bannerLabel">CONSTRUCTION MANAGEMENT SOFTWARE</h6>
 						<h1 class="bannerTitle">Project Management</h1>
 						<p class="bannerSubtitle small">Stay on schedule and within budget. Track construction progress in real time. Digital tools to accurately predict your project completion date and highlight risk areas.</p>
-						<div class="d-flex align-items-center gap-3 justify-content-center">
-							<a href="#" class="btn btn-secondary">Sign Up Now</a>
-							<a href="#" class="btn btn-primary">Request a Demo</a>
-						</div>
+						<div class="d-flex align-items-center gap-3 justify-content-center"> <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Sign Up Now</a> <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="btn btn-primary">Request a Demo</a> </div>
 					</div>
 				</div>
 			</div>
@@ -69,7 +66,7 @@ include("includes/site-info.php");
 					<h6 class="purple_label mb-2">Productiviy</h6>
 					<h4 class="section_heading mb-3">Stay on Track</h4>
 					<p class="fs-18 mb-3">Track quantities of material installed to keep your site teams productive and your projects on schedule. Bettamint automatically turns your data into actionable insights that help you more accurately and competitively estimate completion timelines and costs.</p>
-					<a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+					<a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
 				</div>
 			</div>
 		</div>
@@ -82,7 +79,7 @@ include("includes/site-info.php");
 					<h6 class="purple_label mb-2">QUALITY</h6>
 					<h4 class="section_heading mb-3">Never let a snag turn into rework</h4>
 					<p class="fs-18 mb-3">Track and resolve quality issues, safety concerns, workmanship issues and assign them to the respective contractors ledger via field notes that are geo-tagged and time stamped. All quality issues have an immutable, auditable financial outcome.</p>
-					<a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+					<a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
 				</div>
 				<div class="col-lg-6">
 					<img src="assets/images/pm-2.png" alt="Reload Page">
@@ -101,7 +98,7 @@ include("includes/site-info.php");
 					<h6 class="purple_label mb-2">DOCUMENTATION</h6>
 					<h4 class="section_heading mb-3">Get Paid</h4>
 					<p class="fs-18 mb-3">Mitigate risk by capturing measurements and tracking out-of-scope work with Smartsheets. Automatically notify office teams so they can generate a bill or a change request and secure payment.</p>
-					<a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+					<a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
 				</div>
 			</div>
 		</div>
@@ -114,7 +111,7 @@ include("includes/site-info.php");
 					<h6 class="purple_label mb-2">PROFITABILITY</h6>
 					<h4 class="section_heading mb-3">Protect your margins</h4>
 					<p class="fs-18 mb-3">Monitor costs in real time, identify at-risk scopes of work, issue logs and act fast to make decisions that positively impact your project's budgets and profitability.</p>
-					<a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+					<a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
 				</div>
 				<div class="col-lg-7">
 					<img src="assets/images/pm-4.png" alt="Reload Page">
@@ -133,7 +130,7 @@ include("includes/site-info.php");
 					<h6 class="purple_label mb-2">COMMUNICATION</h6>
 					<h4 class="section_heading mb-3">Keep information accurate </h4>
 					<p class="fs-18 mb-3">Trust that all stakeholders have access to the latest information in a centralised location, and in a format that everyone can understand.</p>
-					<a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+					<a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
 				</div>
 			</div>
 		</div>
@@ -146,7 +143,7 @@ include("includes/site-info.php");
 					<h6 class="purple_label mb-2">REWARDS</h6>
 					<h4 class="section_heading mb-3">Supercharge teams with incentives</h4>
 					<p class="fs-18 mb-3">Experience the power of an incentivised workforce with Bettapay. Set short-term, time-bound goals connected to instantly paid out bonuses and watch as your project timelines accelerate. Fast track construction, supercharge productivity, and improve retention at your construction sites. </p>
-					<a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+					<a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
 				</div>
 				<div class="col-lg-5">
 					<img src="assets/images/pm-6.png" alt="Reload Page">
@@ -165,7 +162,13 @@ include("includes/site-info.php");
 	<?php include("sections/news-section.php"); ?>
 	<!--==== news Section end ====-->
 
+	<!--==== Future Section start ====-->
+	<?php include('sections/future-section.php'); ?>
+	<!--==== Future Section end ====-->
 
+	<!--==== CTA Section Start ====-->
+	<?php include('sections/cta-section.php'); ?>
+	<!--==== CTA Section End ====-->
 	<!--==== FOOTER START ====-->
 	<?php include('includes/footer.php'); ?>
 	<!--==== FOOTER END ====-->

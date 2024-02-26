@@ -39,10 +39,7 @@ include("includes/site-info.php");
           <h1 class="bannerTitle">We're obsessed with
             construction.</h1>
           <p class="bannerSubtitle small">We’re not just in the construction business, we live and breathe it. For over 30 years, we've worked with industry folks across geographies, enterprise sizes and asset classes to build solutions around the way you work . We've been right there, figuring out the best ways to make your project flow smoothly and ensuring your team gets paid without a hitch. Curious about what we offer?</p>
-          <div class="d-flex align-items-center gap-3 justify-content-center">
-            <a href="#" class="btn btn-secondary">Sign Up Now</a>
-            <a href="#" class="btn btn-primary">Request a Demo</a>
-          </div>
+          <div class="d-flex align-items-center gap-3 justify-content-center"> <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Sign Up Now</a> <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="btn btn-primary">Request a Demo</a> </div>
         </div>
       </div>
     </div>
@@ -61,7 +58,7 @@ include("includes/site-info.php");
               <div class="img_wrap">
                 <img src="assets/images/developers.jpg" alt="Reload Page">
               </div>
-              <a href="" class="white-link-button fs-25 fw-600 d-flex justify-content-between hover-white">Developers <i class="arrow-right-icon-green"></i></a>
+              <a href="developers.php" class="white-link-button fs-25 fw-600 d-flex justify-content-between hover-white">Developers <i class="arrow-right-icon-green"></i></a>
             </div>
           </div>
           <div class="col-sm-6 mx-auto mb-lg-0 mb-4 col-lg-auto">
@@ -69,7 +66,7 @@ include("includes/site-info.php");
               <div class="img_wrap">
                 <img src="assets/images/general-contractors.jpg" alt="Reload Page">
               </div>
-              <a href="" class="white-link-button fs-25 fw-600 d-flex justify-content-between hover-white">Sub Contractors  <i class="arrow-right-icon-green"></i></a>
+              <a href="sub-contractors.php" class="white-link-button fs-25 fw-600 d-flex justify-content-between hover-white">Sub Contractors  <i class="arrow-right-icon-green"></i></a>
             </div>
           </div>
           <div class="col-sm-6 mx-auto mb-lg-0 mb-4 col-lg-auto">
@@ -77,7 +74,7 @@ include("includes/site-info.php");
               <div class="img_wrap">
                 <img src="assets/images/sub-contractors.jpg" alt="Reload Page">
               </div>
-              <a href="" class="white-link-button fs-25 fw-600 d-flex justify-content-between hover-white">General Contractors <i class="arrow-right-icon-green"></i></a>
+              <a href="general-contractor.php" class="white-link-button fs-25 fw-600 d-flex justify-content-between hover-white">General Contractors <i class="arrow-right-icon-green"></i></a>
             </div>
           </div>
         </div>
@@ -281,6 +278,92 @@ include("includes/site-info.php");
   </section>
   <!-- Comapny Logo Slider End  -->
 
+  <section class="esgImpactSection">
+    <div class="container">
+      <div class="row mb-4 align-items-center justify-content-between mb-lg-5 pb-3 border-bottom">
+        <div class="col-sm-6">
+          <h4 class="section_heading mb-0 fs-70 fw-600">Our ESG Impact</h4>
+        </div>
+        <div class="col-auto">
+          <img src="assets/images/esg-impact.png" alt="Reload Page">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="performenceCards d-flex flex-column flex-lg-row">
+            <div class="img_wrap flex-shrink-0">
+              <img src="assets/images/icons/performence-1.svg" alt="Reload Page">
+            </div>
+            <div class="text_wrap">
+              <h6 class="purple_label mb-1">FINANCIALS</h6>
+              <h4 class="section_heading mb-3">Financial Inclusion</h4>
+              <p class="fs-18 fw-400">We help informal workers build a verifiable record of their earnings and access, earned wage and affordable credit lines.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="performenceCards d-flex flex-column flex-lg-row">
+            <div class="img_wrap flex-shrink-0">
+              <img src="assets/images/icons/performence-1.svg" alt="Reload Page">
+            </div>
+            <div class="text_wrap">
+              <h6 class="purple_label mb-1">Equity</h6>
+              <h4 class="section_heading mb-3">Social Equity</h4>
+              <p class="fs-18 fw-400">We enable fair access to a steady ad abundant supply of income opportunities for the informal construction workforce.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="performenceCards d-flex flex-column flex-lg-row">
+            <div class="img_wrap flex-shrink-0">
+              <img src="assets/images/icons/performence-2.svg" alt="Reload Page">
+            </div>
+            <div class="text_wrap">
+              <h6 class="purple_label mb-1">SOCIAL</h6>
+              <h4 class="section_heading mb-3 text-md-nowrap">Social Inclusion</h4>
+              <p class="fs-18 fw-400">We help informal workers create an authenticated professional and financial identity promoting social cohesion and active citizenship.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="performenceCards d-flex flex-column flex-lg-row">
+            <div class="img_wrap flex-shrink-0">
+              <img src="assets/images/icons/performence-3.svg" alt="Reload Page">
+            </div>
+            <div class="text_wrap">
+              <h6 class="purple_label mb-1">Mobility</h6>
+              <h4 class="section_heading mb-3">Upward Mobility</h4>
+              <p class="fs-18 fw-400">We empower informal workers to enhance their skills, reach & employability to build a better future for themselves.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="performenceCards d-flex flex-column flex-lg-row">
+            <div class="img_wrap flex-shrink-0">
+              <img src="assets/images/icons/performence-3.svg" alt="Reload Page">
+            </div>
+            <div class="text_wrap">
+              <h6 class="purple_label mb-1">WELFARE</h6>
+              <h4 class="section_heading mb-3">Welfare Distribution</h4>
+              <p class="fs-18 fw-400">We lay the data infrastructure for efficient delivery of welfare measures to intended beneficiaries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="performenceCards d-flex flex-column flex-lg-row">
+            <div class="img_wrap flex-shrink-0">
+              <img src="assets/images/icons/performence-3.svg" alt="Reload Page">
+            </div>
+            <div class="text_wrap">
+              <h6 class="purple_label mb-1">Mobility</h6>
+              <h4 class="section_heading mb-3">Behaviourism</h4>
+              <p class="fs-18 fw-400">We equip informal workers with the tools and resources to move from a job mindset to an entrepreneurial mindset.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!--==== Story Start ====-->
@@ -290,6 +373,14 @@ include("includes/site-info.php");
   <!--==== news Section start ====-->
   <?php include("sections/news-section.php"); ?>
   <!--==== news Section end ====-->
+
+  <!--==== Future Section start ====-->
+  <?php include('sections/future-section.php'); ?>
+  <!--==== Future Section end ====-->
+
+  <!--==== CTA Section Start ====-->
+  <?php include('sections/cta-section.php'); ?>
+  <!--==== CTA Section End ====-->
 
   <!--==== FOOTER START ====-->
   <?php include('includes/footer.php'); ?>

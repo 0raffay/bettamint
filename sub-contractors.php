@@ -39,10 +39,7 @@ include("includes/site-info.php");
             <h6 class="bannerLabel">CONSTRUCTION MANAGEMENT SOFTWARE</h6>
             <h1 class="bannerTitle">Sub Contractors</h1>
             <p class="bannerSubtitle small">Seamlessly link on-site and office teams, with instant access to crucial information they need to enable peak performance.</p>
-            <div class="d-flex align-items-center gap-3 justify-content-center">
-              <a href="#" class="btn btn-secondary">Sign Up Now</a>
-              <a href="#" class="btn btn-primary">Request a Demo</a>
-            </div>
+            <div class="d-flex align-items-center gap-3 justify-content-center"> <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Sign Up Now</a> <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="btn btn-primary">Request a Demo</a> </div>
           </div>
         </div>
       </div>
@@ -260,7 +257,13 @@ include("includes/site-info.php");
   <!--==== news Section start ====-->
   <?php include("sections/news-section.php"); ?>
   <!--==== news Section end ====-->
+  <!--==== Future Section start ====-->
+  <?php include('sections/future-section.php'); ?>
+  <!--==== Future Section end ====-->
 
+  <!--==== CTA Section Start ====-->
+  <?php include('sections/cta-section.php'); ?>
+  <!--==== CTA Section End ====-->
   <!--==== FOOTER START ====-->
   <?php include('includes/footer.php'); ?>
   <!--==== FOOTER END ====-->

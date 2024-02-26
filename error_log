@@ -1,0 +1,81 @@
+[23-Feb-2024 22:27:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 75
+[23-Feb-2024 22:37:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 75
+[23-Feb-2024 22:37:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 75
+[23-Feb-2024 22:39:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 75
+[23-Feb-2024 22:44:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 88
+[23-Feb-2024 23:18:02 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:18:02 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:18:57 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:18:57 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:19:09 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:19:09 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:19:10 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:19:10 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:20:14 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:20:14 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:20:15 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:20:15 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:20:16 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:20:16 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:20:37 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:20:37 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:48:45 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:48:45 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php(6): implode()
+#1 /home/nhdlsw931ibj/public_html/v2/includes/footer-scripts.php(1): include('/home/nhdlsw931...')
+#2 /home/nhdlsw931ibj/public_html/v2/index.php(184): include('/home/nhdlsw931...')
+#3 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 6
+[23-Feb-2024 23:49:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 88
+[23-Feb-2024 23:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 88
+[23-Feb-2024 23:49:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 88
+[25-Feb-2024 20:17:03 UTC] PHP Parse error:  syntax error, unexpected identifier "reload" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 112

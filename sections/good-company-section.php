@@ -21,13 +21,13 @@
 			<li class="col-sm-6 col-lg-3 px-3 px-sm-0 mb-5">
 				<img src="assets//images/good-company/5.png" width="258" height="82" alt="Reload Page">
 			</li>
-			<li class="col-sm-6 col-lg-3 px-3 px-sm-0 mb-0 mb-sm-5">
+			<li class="col-sm-6 col-lg-3 px-3 px-sm-0 mb-5">
 				<img src="assets//images/good-company/6.png" width="181" height="60" alt="Reload Page">
 			</li>
-			<li class="col-sm-6 col-lg-3 px-3 px-sm-0 mb-0 mb-sm-5">
+			<li class="col-sm-6 col-lg-3 px-3 px-sm-0 mb-5">
 				<img src="assets//images/good-company/7.png" width="125" height="90" alt="Reload Page">
 			</li>
-			<li class="col-sm-6 col-lg-3 px-3 px-sm-0 mb-0 mb-sm-5">
+			<li class="col-sm-6 col-lg-3 px-3 px-sm-0 mb-5">
 				<img src="assets//images/good-company/8.png" width="250" height="23" alt="Reload Page">
 			</li>
 		</ul>

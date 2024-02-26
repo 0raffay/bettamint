@@ -39,10 +39,7 @@ include("includes/site-info.php");
             <h6 class="bannerLabel">Numbers you can bank on</h6>
             <h1 class="bannerTitle">Financial Management</h1>
             <p class="bannerSubtitle small">Have a birds eye view of your project’s financial health. View your cashflows and projected costs against budget, mitigate financial risks with real time data and protect your profit margins.</p>
-            <div class="d-flex align-items-center gap-3 justify-content-center">
-              <a href="#" class="btn btn-secondary">Sign Up Now</a>
-              <a href="#" class="btn btn-primary">Request a Demo</a>
-            </div>
+            <div class="d-flex align-items-center gap-3 justify-content-center"> <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Sign Up Now</a> <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="btn btn-primary">Request a Demo</a> </div>
           </div>
         </div>
       </div>
@@ -69,7 +66,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">DIGITAL LEDGERS</h6>
           <h4 class="section_heading mb-3">Centralise oversight</h4>
           <p class="fs-18 mb-3">Monitor ledgers of contractors, subcontractors, and workers in one place, track financials, billing, debit notes, change orders, advances, and retention.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank"  href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
       </div>
     </div>
@@ -82,7 +79,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">BILLING</h6>
           <h4 class="section_heading mb-3">Speed up billing</h4>
           <p class="fs-18 mb-3">Automatically generate RA bills against certified unbilled measurements based on predetermined billing parameters.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank"  href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
         <div class="col-lg-6">
           <img src="assets/images/pm-2.png" alt="Reload Page">
@@ -101,7 +98,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">PAYMENTS</h6>
           <h4 class="section_heading mb-3">Authenticate payouts</h4>
           <p class="fs-18 mb-3">Meticulous bill payments engineered for precision based on real site data, quality checks, measurements and contractor ledgers paid out directly through our payment infrastructure.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank"  href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
       </div>
     </div>
@@ -114,7 +111,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">CHANGE MANAGEMENT</h6>
           <h4 class="section_heading mb-3">Minimize risks</h4>
           <p class="fs-18 mb-3">Bring change management to the site for quicker approvals and clearer communication, eliminating risks. Give accounting teams real time visibility into change as it occurs on the site.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank"  href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
         <div class="col-lg-7">
           <img src="assets/images/pm-4.png" alt="Reload Page">
@@ -133,7 +130,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">FINANCIALS</h6>
           <h4 class="section_heading mb-3">Budget smartly</h4>
           <p class="fs-18 mb-3">Handle on-site changes in real time for more accurate budget reflections. Generate comprehensive financial reports to understand the impact of spending on projected profits.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank"  href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
       </div>
     </div>
@@ -146,7 +143,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">INVOICING</h6>
           <h4 class="section_heading mb-3">Keep cash flowing</h4>
           <p class="fs-18 mb-3">Stop billing delays from turning into building delays and get paid faster with simplified invoice collection, review, and approval.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank"  href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
         <div class="col-lg-5">
           <img src="assets/images/pm-5.png" alt="Reload Page">
@@ -277,7 +274,13 @@ include("includes/site-info.php");
   <?php include("sections/news-section.php"); ?>
   <!--==== news Section end ====-->
 
+<!--==== Future Section start ====-->
+<?php include('sections/future-section.php'); ?>
+<!--==== Future Section end ====-->
 
+<!--==== CTA Section Start ====-->
+<?php include('sections/cta-section.php'); ?>
+<!--==== CTA Section End ====-->
   <!--==== FOOTER START ====-->
   <?php include('includes/footer.php'); ?>
   <!--==== FOOTER END ====-->

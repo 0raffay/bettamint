@@ -1,10 +1,10 @@
 <?php
 /* --- Site urls --- */
 //Local
-$siteURL = "https://localhost/bettamint";
+$siteURL = "http://localhost/bettamint";
 
 //Live:
-// $siteURL = "https://bettamint.com/";
+  $siteURL = "https://bettamint.com";
 /* --- Site urls --- */
 
 

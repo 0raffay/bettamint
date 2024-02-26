@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="text-center">
-      <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+      <a target="_blank"  href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
     </div>
   </div>
 </section>

@@ -39,10 +39,7 @@ include("includes/site-info.php");
             <h6 class="bannerLabel">CONSTRUCTION MANAGEMENT SOFTWARE</h6>
             <h1 class="bannerTitle">General Contractors</h1>
             <p class="bannerSubtitle small">End to end construction workforce management solution for General Contractors. Accelerate construction and unleash productivity with tools purpose built for you.</p>
-            <div class="d-flex align-items-center gap-3 justify-content-center">
-              <a href="#" class="btn btn-secondary">Sign Up Now</a>
-              <a href="#" class="btn btn-primary">Request a Demo</a>
-            </div>
+            <div class="d-flex align-items-center gap-3 justify-content-center"> <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Sign Up Now</a> <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="btn btn-primary">Request a Demo</a> </div>
           </div>
         </div>
       </div>
@@ -64,7 +61,7 @@ include("includes/site-info.php");
               <p class="fs-18">Equip your team with today's essential information to achieve tomorrow's desired outcomes.</p>
             </div>
             <div class="mb-4 mb-lg-5">
-              <a href="#" class="white-link-button hover-white fs-25 gap-4">Protect your margins <i class="arrow-right-icon-green"></i></a>
+              <a href="#" class="white-link-button hover-white fs-25 gap-4  mb-3 pb-1">Protect your margins <i class="arrow-right-icon-green"></i></a>
               <p class="fs-18">Protect your margins, optimise your backlog, manage change in real time and streamline the billing and payment cycle.</p>
             </div>
           </div>
@@ -220,7 +217,13 @@ include("includes/site-info.php");
   <!--==== news Section start ====-->
   <?php include("sections/news-section.php"); ?>
   <!--==== news Section end ====-->
+<!--==== Future Section start ====-->
+<?php include('sections/future-section.php'); ?>
+<!--==== Future Section end ====-->
 
+<!--==== CTA Section Start ====-->
+<?php include('sections/cta-section.php'); ?>
+<!--==== CTA Section End ====-->
   <!--==== FOOTER START ====-->
   <?php include('includes/footer.php'); ?>
   <!--==== FOOTER END ====-->

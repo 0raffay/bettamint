@@ -1,3 +1,4 @@
+    <base href="<?php echo $siteURL; ?>/">
     <!-- favicon start -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <!-- favicon end -->
@@ -21,8 +22,8 @@
     <!-- Splide Slider -->
 
     <!-- local files start -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=<?php echo time(); ?>">
     <!-- local files end -->
 
     <!-- remix icon cdn -->

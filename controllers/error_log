@@ -1,0 +1,18 @@
+[24-Feb-2024 00:08:18 UTC] PHP Warning:  Undefined array key "first_name" in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 3
+[24-Feb-2024 00:08:18 UTC] PHP Warning:  Undefined array key "last_name" in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 4
+[24-Feb-2024 00:08:18 UTC] PHP Warning:  Undefined array key "account_type" in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 5
+[24-Feb-2024 00:08:18 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 6
+[24-Feb-2024 00:08:18 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php(6): implode()
+#1 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 6
+[24-Feb-2024 00:09:26 UTC] PHP Warning:  Undefined array key "first_name" in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 3
+[24-Feb-2024 00:09:26 UTC] PHP Warning:  Undefined array key "last_name" in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 4
+[24-Feb-2024 00:09:26 UTC] PHP Warning:  Undefined array key "account_type" in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 5
+[24-Feb-2024 00:09:26 UTC] PHP Warning:  Undefined array key "scopeOfWork" in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 6
+[24-Feb-2024 00:09:26 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php:6
+Stack trace:
+#0 /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php(6): implode()
+#1 {main}
+  thrown in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 6

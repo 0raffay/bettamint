@@ -16,11 +16,11 @@
     --clr-grey-700: #656565;
 
 
-    --section-padding: 65px 0;
+    --section-padding: 120px 0 85px;
 
     --font-controller: 0px;
 
-    --fs-section-heading: clamp(24px, 3vw, 45px);
+    --fs-section-heading: clamp(24px, 3vw, 40px);
 
 
     --fs-10: calc(10px - calc(var(--font-controller) * -1));

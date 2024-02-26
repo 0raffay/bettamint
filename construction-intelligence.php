@@ -39,10 +39,7 @@ include("includes/site-info.php");
             <h6 class="bannerLabel">Leverage every number</h6>
             <h1 class="bannerTitle">Construction Intelligence</h1>
             <p class="bannerSubtitle small">Your data is your most powerful ally. Turn your project information into meaningful, actionable insights that will guide your business.</p>
-            <div class="d-flex align-items-center gap-3 justify-content-center">
-              <a href="#" class="btn btn-secondary">Sign Up Now</a>
-              <a href="#" class="btn btn-primary">Request a Demo</a>
-            </div>
+            <div class="d-flex align-items-center gap-3 justify-content-center"> <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Sign Up Now</a> <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="btn btn-primary">Request a Demo</a> </div>
           </div>
         </div>
       </div>
@@ -69,7 +66,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">FORECASTING</h6>
           <h4 class="section_heading mb-3">Course correct</h4>
           <p class="fs-18 mb-3">Identify and track critical costs with forecasting tools that show you the best way to compensate for overspending and delays.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
       </div>
     </div>
@@ -82,7 +79,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">ANALYTICS</h6>
           <h4 class="section_heading mb-3">Insights, in sight</h4>
           <p class="fs-18 mb-3">View production rates, estimated completion timelines, costs, cashflows, contractor and worker productivities, manpower turnover, variations, change requests and more though powerful visualisation tools anyone can understand.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
         <div class="col-lg-6">
           <img src="assets/images/pm-2.png" alt="Reload Page">
@@ -101,7 +98,7 @@ include("includes/site-info.php");
           <h6 class="purple_label mb-2">PROGRESS REPORTS</h6>
           <h4 class="section_heading mb-3">Simplified reporting</h4>
           <p class="fs-18 mb-3">Access a collection of templated and customisable reports to give you the insights you need to make the most informed decisions.</p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
       </div>
     </div>
@@ -115,7 +112,7 @@ include("includes/site-info.php");
           <h4 class="section_heading mb-3">Your project, your data</h4>
           <p class="fs-18 mb-3">Workforce data at your fingertips for enhanced insight, security and
             easy reporting. </p>
-          <a href="" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
+          <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="primary-link-button fs-18">Request A Demo <i class="arrow-right-icon-green"></i></a>
         </div>
         <div class="col-lg-7">
           <img src="assets/images/pm-4.png" alt="Reload Page">
@@ -195,7 +192,13 @@ include("includes/site-info.php");
   <!--==== news Section start ====-->
   <?php include("sections/news-section.php"); ?>
   <!--==== news Section end ====-->
+  <!--==== Future Section start ====-->
+  <?php include('sections/future-section.php'); ?>
+  <!--==== Future Section end ====-->
 
+  <!--==== CTA Section Start ====-->
+  <?php include('sections/cta-section.php'); ?>
+  <!--==== CTA Section End ====-->
 
   <!--==== FOOTER START ====-->
   <?php include('includes/footer.php'); ?>
