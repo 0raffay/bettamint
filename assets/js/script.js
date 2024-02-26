@@ -338,7 +338,7 @@ function handlePaymentForm() {
         window.location.href = "index.php";
       });
     }).catch(error => {
-      Swal.fire("Error!", "Something went wrong!", "error").then(function() {
+      Swal.fire("Error!", "Something went wrong!", "error").then(function () {
         $(".form_loader").hide();
       });
       console.error
