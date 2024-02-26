@@ -180,6 +180,7 @@ function getCookie(name) {
   }
   return null;
 }
+
 function handleLeadForm(data) {
   validateForm({
     form: "#leadForm",
@@ -208,6 +209,7 @@ function handleLeadForm(data) {
       companyName: $("#leadForm").find("[name='company']").val(),
       email: $("#leadForm").find("[name='email']").val(),
       phoneNumber: $("#leadForm").find("[name='number']").val(),
+      packageType: "basic",
     }
 
     callLeadApi(data);
@@ -254,7 +256,6 @@ function handleLeadForm(data) {
   })
 }
 
-
 function paymentPageCookie() {
   const dataCookie = getCookie('data');
   const parsedData = dataCookie ? JSON.parse(dataCookie) : {};
@@ -264,9 +265,18 @@ function paymentPageCookie() {
   $("[payment-company-name]").val(parsedData.companyName)
   $("[payment-phone-number]").val(parsedData.phoneNumber)
   $("[payment-email-address]").val(parsedData.email)
+  $("[payment-lead-id]").val(parsedData.leadId)
+  $("[payment-custom-data]").val(parsedData.customData)
+  $("[payment-package-type]").val(parsedData.packageType)
 }
 
 function handlePaymentForm() {
+  $("#paymentCondition").change(function () {
+    if ($(this).is(":checked")) {
+      $(this).next().next().hide();
+    }
+  })
+
   validateForm({
     form: "#paymentForm",
     inputs: "[payment-validate]",
@@ -292,13 +302,47 @@ function handlePaymentForm() {
       gstinError.hide();
     }
 
-    if ($('#paymentCondition').not(":checked")) {
+    if (!$('#paymentCondition').is(":checked")) {
       $(".payment-error").show();
-    } else {
-      $(".payment-error").hide();
+      return;
+    }
+    $(".payment-error").hide();
 
+    $(".form_loader").show();
+    const send = {
+      leadId: $("[payment-lead-id]").val(),
+      customData: $("[payment-custom-data]").val(),
+      packageType: $("[payment-package-type").val(),
     }
 
+    const api = "https://api-prod.bettamint.com/api/dashboard/Lead";
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify(send),
+    };
 
+    const res = fetch(api, requestOptions)
+    res.then(function (response) {
+      if (!response.ok) {
+        Swal.fire("Error!", "Something went wrong!", "error");
+        throw new Error("Something went wrong please try again.")
+      }
+      return response.json();
+    }).then(data => {
+      $(".form_loader").hide();
+      Swal.fire("Success!", "Form submitted successfully!", "success").then(function () {
+        window.location.href = "index.php";
+      });
+    }).catch(error => {
+      Swal.fire("Error!", "Something went wrong!", "error").then(function() {
+        $(".form_loader").hide();
+      });
+      console.error
+        ('Error:', error);
+    });
   })
 } 

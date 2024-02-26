@@ -21,18 +21,14 @@
 <body>
 
   <!--==== HEADER START ====-->
-  <div class="d-none">
-    <?php include('includes/header.php'); ?>
-  </div>
+  <?php include('includes/header.php'); ?>
   <!--==== HEADER END ====-->
-  <div class="d-none">
-    <div class="full-width-banner custom-height d-flex" style="background-image:url(assets/images/full-width.png)">
-      <div class="container align-self-center">
-        <div class="row">
-          <div class=" col-lg-12">
-            <div class="home-banner-content">
-              <h1>Payment </h1>
-            </div>
+  <div class="full-width-banner custom-height d-flex" style="background-image:url(assets/images/full-width.png)">
+    <div class="container align-self-center">
+      <div class="row">
+        <div class=" col-lg-12">
+          <div class="home-banner-content">
+            <h1>Payment </h1>
           </div>
         </div>
       </div>
@@ -43,6 +39,9 @@
       <div class="row full-width-content">
         <div class="col-lg-12 col-md-12 col-sm-12">
           <form method="post" novalidate id="paymentForm">
+            <input type="hidden" name="leadId" payment-lead-id>
+            <input type="hidden" name="customData" payment-custom-data>
+            <input type="hidden" name="packageType" payment-package-type>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -99,7 +98,7 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="address">Address <span class="fa-asterisk"></span></label>
-                  <textarea payment-validate id="address" name="address" rows="3"></textarea>
+                  <textarea payment-validate class="pt-2" id="address" name="address" rows="3"></textarea>
                   <p class="error_message">Please enter your address.</p>
                 </div>
               </div>
@@ -172,17 +171,17 @@
               </div>
               <div class="col-md-6 mb-3">
                 <div class="pos-rel-check">
-                  <div class="form-group">
+                  <div class="form-group position-relative">
                     <input type="checkbox" id="paymentCondition" required="">
-                    <label for="html">I agree to Bettamint's Website <a href="privacy-policy.php">Privacy Policy</a>, and <a href="terms-of-use.php">Terms of Use</a></label>
-                    <small class="payment-error mt-3 py-3" style="color: red; display: none;">Please agree to the terms and conditions before proceeding to checkout.</small>
+                    <label for="paymentCondition">I agree to Bettamint's Website <a href="privacy-policy.php">Privacy Policy</a>, and <a href="terms-of-use.php">Terms of Use</a></label>
+                    <small class="payment-error" style="color: red; position: absolute; display: none; bottom: -48px;">Please agree to the terms and conditions before proceeding to checkout.</small>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 mb-3">
-                <div class="payment-submit">
+                <div class="payment-submit position-relative">
                   <button class="btn btn-secondary" type="submit">Continue to Checkout</button>
-                  <div class="form_loader loader"> </div>
+                  <div class="form_loader loader top-0"> </div>
                 </div>
               </div>
             </div>
@@ -192,18 +191,16 @@
     </div>
   </section>
 
-  <div class="d-none">
-    <!--==== Future Section start ====-->
-    <?php include('sections/future-section.php'); ?>
-    <!--==== Future Section end ====-->
+  <!--==== Future Section start ====-->
+  <?php include('sections/future-section.php'); ?>
+  <!--==== Future Section end ====-->
 
-    <!--==== CTA Section Start ====-->
-    <?php include('sections/cta-section.php'); ?>
-    <!--==== CTA Section End ====-->
-    <!--==== FOOTER START ====-->
-    <?php include('includes/footer.php'); ?>
-    <!--==== FOOTER END ====-->
-  </div>
+  <!--==== CTA Section Start ====-->
+  <?php include('sections/cta-section.php'); ?>
+  <!--==== CTA Section End ====-->
+  <!--==== FOOTER START ====-->
+  <?php include('includes/footer.php'); ?>
+  <!--==== FOOTER END ====-->
   <!--==== SCRIPTS START ====-->
   <?php include('includes/footer-scripts.php'); ?>
   <!--==== SCRIPTS END ====-->
