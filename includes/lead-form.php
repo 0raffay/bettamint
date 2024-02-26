@@ -46,10 +46,10 @@
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="form-group"> 
-                  
+                <div class="form-group">
+
                   <!-- Large Box -->
-                  
+
                   <div class="scopeOfWorkContainer low-options" style="display: none;">
                     <label>Scope of Work<strong>*</strong></label>
                     <select name="scopeOfWork[]" data-scope-of-work multiple class='scopeOfWorkSelect'>
@@ -90,29 +90,28 @@
                       ?>
                       <?php
 
-                      foreach ( $scopeOfWorkOptions as $optgroupLabel => $options ) {
+                      foreach ($scopeOfWorkOptions as $optgroupLabel => $options) {
 
                         echo "<optgroup label=\"$optgroupLabel\">";
 
-                        foreach ( $options as $option ) {
+                        foreach ($options as $option) {
 
                           echo "<option value=\"$option\">$option</option>";
-
                         }
 
                         echo "</optgroup>";
-
                       }
 
                       ?>
                     </select>
                     <p class="error_message start-0">Please select valid options</p>
-                    <span class="example-span">Select as many as applicable</span> </div>
-                  
-                  <!-- Large Box --> 
-                  
+                    <span class="example-span">Select as many as applicable</span>
+                  </div>
+
+                  <!-- Large Box -->
+
                   <!-- Small Box -->
-                  
+
                   <div class="scopeOfWorkContainer high-options" style="display: none;">
                     <label>Scope of Work<strong>*</strong></label>
                     <select name="scopeOfWork[]" data-scope-of-work multiple class='scopeOfWorkSelect'>
@@ -227,9 +226,9 @@
 
                         ),
 
-                        "Electrical Works LT" => array( "Electrical Works LT" ),
+                        "Electrical Works LT" => array("Electrical Works LT"),
 
-                        "Electrical Works - HT" => array( "Substation Power Supply" ),
+                        "Electrical Works - HT" => array("Substation Power Supply"),
 
                         "Plumbing" => array(
 
@@ -249,11 +248,11 @@
 
                         ),
 
-                        "Glazing" => array( "Glazing Works" ),
+                        "Glazing" => array("Glazing Works"),
 
-                        "Millworks" => array( "Fixed furniture", "Movable furniture" ),
+                        "Millworks" => array("Fixed furniture", "Movable furniture"),
 
-                        "Swimming Pools & Water Bodies" => array( "Swimming Pools & Water Bodies" ),
+                        "Swimming Pools & Water Bodies" => array("Swimming Pools & Water Bodies"),
 
                         "Mechanical Works" => array(
 
@@ -321,33 +320,32 @@
 
                       );
 
-                      $earthworkOptions = $scopeOfWorkOptions[ "Earthwork" ];
+                      $earthworkOptions = $scopeOfWorkOptions["Earthwork"];
 
                       ?>
                       <?php
 
-                      foreach ( $scopeOfWorkOptions as $optgroupLabel => $options ) {
+                      foreach ($scopeOfWorkOptions as $optgroupLabel => $options) {
 
                         echo "<optgroup label=\"$optgroupLabel\">";
 
-                        foreach ( $options as $option ) {
+                        foreach ($options as $option) {
 
 
                           echo "<option value=\"$option\">$option</option>";
-
                         }
 
                         echo "</optgroup>";
-
                       }
 
                       ?>
                     </select>
                     <p class="error_message start-0">Please select valid options</p>
-                    <span class="example-span">Select as many as applicable</span> </div>
-                  
-                  <!-- Small Box --> 
-                  
+                    <span class="example-span">Select as many as applicable</span>
+                  </div>
+
+                  <!-- Small Box -->
+
                 </div>
               </div>
               <div class="col-md-12">
@@ -363,8 +361,9 @@
                 <div class="form-group">
                   <label>Email Address<strong>*</strong></label>
                   <div class="input_wrap">
-                    <input lead-validate lead-regex="^[^\s@]+@[^\s@]+\.[^\s@]+$" type="email" name='email' value="<?php echo isset($_SESSION['billing_email']) ? $_SESSION['billing_email'] : "" ?>" required />
+                    <input lead-validate data-lead-email lead-regex="^[^\s@]+@[^\s@]+\.[^\s@]+$" type="email" name='email' value="<?php echo isset($_SESSION['billing_email']) ? $_SESSION['billing_email'] : "" ?>" required />
                     <p class="error_message">Please Enter Your Email Address </p>
+                    <p class="email-error">Email Already Exists. Please try with another email.</p>
                   </div>
                 </div>
               </div>
@@ -378,7 +377,7 @@
                 </div>
               </div>
               <div class="col-md-12">
-                <button lead-submit class="btn btn-secondary" name="basicSubmit" type="submit" >Submit</button>
+                <button lead-submit class="btn btn-secondary" name="basicSubmit" type="submit">Submit</button>
                 <div class="form_loader loader"> </div>
               </div>
             </div>
