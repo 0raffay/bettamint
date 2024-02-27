@@ -2619,7 +2619,7 @@ form.inquiry-form-pricing .form-group {
   outline: none;
 }
 
-.form-style-1 .input_wrap :is(input, select, textarea) {
+.form-style-1 .input_wrap :is(input:not([type="checkbox"]), select, textarea) {
   border: none;
   padding: 0;
   min-height: auto;
@@ -2634,6 +2634,10 @@ form.inquiry-form-pricing .form-group {
 .form-style-1 .input_wrap :is(input, select, textarea)::placeholder {
   color: #D1D3E4;
   text-transform: capitalize;
+}
+
+.form-style-1.paymentForm .input_wrap {
+  margin-bottom: 25px;
 }
 
 .contactParagraph a {
@@ -2765,3 +2769,145 @@ section.slidingLogoSection {
 }
 
 /* Bettawork End */
+
+/* Internship Start */
+
+/* DIVE TAB START */
+
+.dive_text>p {
+  color: #000;
+}
+
+.tabbingButtonList li {
+  max-width: 394px;
+  width: 100%;
+}
+
+.tabbingButtonList li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.tabbingButtonList li button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  padding: 8px 15px;
+  width: 100%;
+  transition: all 350ms ease;
+}
+
+.tabbingButtonList li button:hover {
+  background-color: #81B734;
+  color: white;
+}
+
+.tabbingButtonList li button:active {
+  background-color: #81B734;
+  color: white;
+}
+
+.tabbingButtonList li button:focus {
+  background-color: #81B734;
+  color: white;
+}
+
+.tabbingPanel h6 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  line-height: 28.13px;
+}
+
+.tabbingPanelList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* DIVE TAB END */
+
+/* BENEFIT START */
+
+.benefitWrapper {
+  padding-block: 200px;
+  background-image: url('../images/benefit-wrapper-bg.png');
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.benefitCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: white;
+  max-width: 412px;
+  width: 100%;
+  min-height: 160px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  margin-inline: auto;
+  background-image: url('../images/benefit-card-prop.png');
+  background-repeat: no-repeat;
+  background-size: 80px 90px;
+  background-position: -15px -11px;
+  padding-inline: 20px;
+}
+
+.benefitCardCount {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #B768D5;
+}
+
+.benefiteMainContent>* {
+  color: #000;
+}
+
+.benefiteMainContent h4 {
+  margin-bottom: 15px;
+}
+
+/* BENEFIT END */
+
+/* JOIN START */
+
+.joinWrapper {
+  padding-block: 100px;
+}
+
+.joinMainContent h4 {
+  color: #fff;
+}
+
+.joinMainContent p {
+  color: #fff;
+  line-height: 24px;
+}
+
+/* JOIN END */
+
+/* Internship End */
