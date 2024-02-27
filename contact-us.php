@@ -65,7 +65,7 @@ include( "includes/site-info.php" );
               <div class="col-12">
                 <label for="enquiryType" class="input_wrap select">
                 <label for="enquiryType">Enquiry Type</label>
-                <select id="enquiryType" name="enquiryType">
+                <select required id="enquiryType" name="enquiryType">
                   <option value="">Select Enquiry Type</option>
                   <option value="Sales">Sales</option>
                   <option value="Support">Support</option>
@@ -77,33 +77,33 @@ include( "includes/site-info.php" );
               <div class="col-md-6 pe-md-2">
                 <label for="fName" class="input_wrap">
                 <label for="fName">First Name</label>
-                <input id="fName" name="fName" type="text" placeholder="Enter First Name">
+                <input required id="fName" name="fName" type="text" placeholder="Enter First Name">
                 </label>
               </div>
               <div class="col-md-6 ps-md-2">
                 <label for="lName" class="input_wrap">
                 <label for="lName">Last Name</label>
-                <input type="text" id="lName" name="lName" placeholder="Enter Last Name">
+                <input required type="text" id="lName" name="lName" placeholder="Enter Last Name">
                 </label>
               </div>
               <div class="col-12">
                 <label for="emailAddress" class="input_wrap">
                 <label for="emailAddress">Email Address</label>
-                <input type="text" id="emailAddress" name="emailAddress" placeholder="emailaddress@yourmail.com">
+                <input required type="text" id="emailAddress" name="emailAddress" placeholder="emailaddress@yourmail.com">
                 </label>
               </div>
               <div class="col-12">
                 <label for="phoneNumber" class="input_wrap">
                 <label for="phoneNumber">Phone Number</label>
                 <div class="d-flex align-items-center gap-2"> <span class="fs-20 fw-600 lts-25 fc-silver-2">+91</span>
-                  <input id="phoneNumber" type="tel" name="phoneNumber" placeholder="000 000 0000">
+                  <input required id="phoneNumber" type="tel" name="phoneNumber" placeholder="000 000 0000">
                 </div>
                 </label>
               </div>
               <div class="col-md-6 pe-md-2">
                 <label for="companyType" class="input_wrap select">
                 <label for="companyType">Company Type</label>
-                <select id="companyType" name="companyType">
+                <select required id="companyType" name="companyType">
                   <option value="">Select Company Type</option>
                   <option value="Developer">Developer</option>
                   <option value="General Contractor">General Contractor</option>
@@ -117,13 +117,13 @@ include( "includes/site-info.php" );
               <div class="col-md-6 ps-md-2">
                 <label for="companyName" class="input_wrap">
                 <label for="">Company Name</label>
-                <input id="companyName" name="companyName" type="text" placeholder="Enter Company Name">
+                <input required id="companyName" name="companyName" type="text" placeholder="Enter Company Name">
                 </label>
               </div>
               <div class="col-12">
                 <label for="comments" class="input_wrap">
                 <label for="comments">Comments/Questions</label>
-                <textarea class="pt-2" name="comments" id="comments" placeholder="Type Your Query"></textarea>
+                <textarea required class="pt-2" name="comments" id="comments" placeholder="Type Your Query"></textarea>
                 </label>
               </div>
               <div class="col-12 mt-md-5 mt-4">

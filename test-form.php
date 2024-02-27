@@ -352,12 +352,16 @@
         const data = {
           firstName: $("#leadForm").find("[name='first_name']").val(),
           lastName: $("#leadForm").find("[name='last_name']").val(),
-          Profession: $("#leadForm").find("[name='account_type']").val(),
-          scopeOfWork: val,
           companyName: $("#leadForm").find("[name='company']").val(),
           email: $("#leadForm").find("[name='email']").val(),
           phoneNumber: $("#leadForm").find("[name='number']").val(),
-          packageType: "basic",
+          Profession: $("#leadForm").find("[name='account_type']").val(),
+          panNumber: null,
+          message: "-",
+          packageType: "Basic",
+          scopeOfWork: val,
+          isConverted: false,
+          customdata: null,
         }
 
         callLeadApi(data);
