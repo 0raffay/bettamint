@@ -1,4 +1,4 @@
-<div class="modal fade" id="CareerForm" tabindex="-1" role="dialog" aria-labelledby="CareerForm" aria-hidden="true">
+<div class="modal fade" id="careerForm" tabindex="-1" role="dialog" aria-labelledby="careerForm" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -10,19 +10,19 @@
           <form method="post" action="jobs_form_process.php" enctype="multipart/form-data">
             <div class="form-group mb-2">
               <label>Name*</label>
-              <input type="text" required name="name" placeholder="">
+              <input type="text" required name="jobUserName" placeholder="">
             </div>
             <div class="form-group mb-2">
               <label>Email*</label>
-              <input type="email" required name="email" placeholder="">
+              <input type="email" required name="jobEmail" placeholder="">
             </div>
             <div class="form-group mb-2">
               <label>Phone Number*</label>
-              <input type="tel" required name='number' placeholder="">
+              <input type="tel" required name='jobNumber' placeholder="">
             </div>
             <div class="form-group mb-2">
               <label>LinkedIn Url*</label>
-              <input type="text" required name="profileLink" placeholder="">
+              <input type="text" required name="jobSocialLink" placeholder="">
             </div>
             <div class="form-group mb-2">
               <label>Upload Resume*</label>
@@ -31,7 +31,7 @@
             <div class="form-group mb-2">
               <label>Why do you want to join Bettamint* (500 Words Only)</label>
               <textarea name='message'></textarea>
-              <input name="jobId" type="hidden" id="myInput" />
+              <input name="jobId" type="hidden" id="jobName" />
             </div>
             <div class="sbbmt-btn">
               <div class="loader" style="display:none;"></div>

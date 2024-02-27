@@ -1,4 +1,4 @@
-<?php include("includes/career-form.php"); ?>
+
 <?php include("includes/lead-form.php"); ?>
 <!-- library files start =-->
 <script src="assets/js/libs.js"></script>

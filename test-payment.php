@@ -1,39 +1,15 @@
-<?php include("includes/site-info.php"); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Payment | <?php echo $siteName; ?></title>
-  <?php include("includes/compatibility.php"); ?>
-  <?php include("includes/og.php"); ?>
-
-  <!-- META TITLE AND DESCRIPTION -->
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <!-- META TITLE AND DESCRIPTION -->
-
-  <!--==== STYLES START ====-->
-  <?php include('includes/header-styles.php'); ?>
-  <!--==== STYLES END ====-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/libs.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>test-payment</title>
 </head>
 
 <body>
-
-  <!--==== HEADER START ====-->
-  <?php include('includes/header.php'); ?>
-  <!--==== HEADER END ====-->
-  <div class="full-width-banner custom-height d-flex" style="background-image:url(assets/images/full-width.png)">
-    <div class="container align-self-center">
-      <div class="row">
-        <div class=" col-lg-12">
-          <div class="home-banner-content">
-            <h1>Payment </h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <section id="payment-page">
     <div class="container">
       <div class="row full-width-content">
@@ -191,20 +167,139 @@
     </div>
   </section>
 
-  <!--==== Future Section start ====-->
-  <?php include('sections/future-section.php'); ?>
-  <!--==== Future Section end ====-->
+  <script src="assets/js/libs.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 
-  <!--==== CTA Section Start ====-->
-  <?php include('sections/cta-section.php'); ?>
-  <!--==== CTA Section End ====-->
-  <!--==== FOOTER START ====-->
-  <?php include('includes/footer.php'); ?>
-  <!--==== FOOTER END ====-->
-  <!--==== SCRIPTS START ====-->
-  <?php include('includes/footer-scripts.php'); ?>
-  <!--==== SCRIPTS END ====-->
+  <script src="assets/multi-select/multi-select.js"></script>
+  <link rel="stylesheet" href="assets/multi-select/multi-select.css">
+  <script>
+    $('.scopeOfWorkSelect').multiselect({
+      columns: 1,
+      texts: {
+        placeholder: '',
+        search: 'Search'
+      },
+      search: true,
+      selectAll: false
+    });
+  </script>
 
+  <script>
+    $(document).ready(function() {
+
+      paymentPageCookie();
+      handlePaymentForm();
+
+
+    })
+
+    function getCookie(name) {
+      const cookieString = document.cookie;
+      const cookies = cookieString.split('; ');
+      for (const cookie of cookies) {
+        const [cookieName, cookieValue] = cookie.split('=');
+        if (cookieName === name) {
+          return decodeURIComponent(cookieValue);
+        }
+      }
+      return null;
+    }
+
+    function paymentPageCookie() {
+      const dataCookie = getCookie('data');
+      const parsedData = dataCookie ? JSON.parse(dataCookie) : {};
+
+      $("[payment-f-name]").val(parsedData.firstName)
+      $("[payment-l-name]").val(parsedData.lastName)
+      $("[payment-company-name]").val(parsedData.companyName)
+      $("[payment-phone-number]").val(parsedData.phoneNumber)
+      $("[payment-email-address]").val(parsedData.email)
+      $("[payment-lead-id]").val(parsedData.leadId)
+      $("[payment-custom-data]").val(parsedData.customData)
+      $("[payment-package-type]").val(parsedData.packageType)
+    }
+
+    function handlePaymentForm() {
+      $("#paymentCondition").change(function() {
+        if ($(this).is(":checked")) {
+          $(this).next().next().hide();
+        }
+      })
+
+      validateForm({
+        form: "#paymentForm",
+        inputs: "[payment-validate]",
+        button: "[submit-payment]",
+        specialFields: {
+          selector: 'payment-regex',
+        },
+        errorClass: "error",
+        disableClass: "disabled",
+      }, function() {
+
+        const gstinInput = $('#gstin');
+        const gstin = gstinInput.val();
+        const gstinError = gstinInput.next();
+        if (gstin !== '') {
+          var gstinPattern = /^([0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}[Z]{1}[0-9A-Z]{1})$/;
+          if (!gstinPattern.test(gstin)) {
+            gstinError.show();
+            gstinError.html('Invalid GSTIN');
+            gstinError.css({
+              color: "red"
+            });
+            return false;
+          }
+          gstinError.hide();
+        }
+
+        if (!$('#paymentCondition').is(":checked")) {
+          $(".payment-error").show();
+          return;
+        }
+        $(".payment-error").hide();
+
+        $(".form_loader").show();
+        const send = {
+          leadId: $("[payment-lead-id]").val(),
+          customData: $("[payment-custom-data]").val(),
+          packageType: $("[payment-package-type").val(),
+        }
+
+        const api = "https://api-prod.bettamint.com/api/dashboard/Lead";
+        const requestOptions = {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify(send),
+        };
+
+        const res = fetch(api, requestOptions)
+        res.then(function(response) {
+          if (!response.ok) {
+            Swal.fire("Error!", "Something went wrong!", "error");
+            throw new Error("Something went wrong please try again.")
+          }
+          return response.json();
+        }).then(data => {
+          $(".form_loader").hide();
+          Swal.fire("Success!", "Form submitted successfully!", "success").then(function() {
+            window.location.href = "index.php";
+          });
+        }).catch(error => {
+          Swal.fire("Error!", "Something went wrong!", "error").then(function() {
+            $(".form_loader").hide();
+          });
+          console.error('Error:', error);
+        });
+      })
+    }
+  </script>
+
+  </script>
 </body>
 
 </html>

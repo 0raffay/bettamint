@@ -60,12 +60,12 @@ include( "includes/site-info.php" );
         <div class="contactFormContainer form-style-1">
           <h2 class="fs-24 fw-700 fc-black lts-25 mb-1">Contact Us</h2>
           <p class="fs-16 fc-black fw-600 lts-25 mb-4">Fill out the contact form below and we’ll get back to you as soon as possible.</p>
-          <form action="">
+          <form action="controllers/contact_form.php" method="post">
             <div class="row">
               <div class="col-12">
                 <label for="enquiryType" class="input_wrap select">
                 <label for="enquiryType">Enquiry Type</label>
-                <select id="enquiryType">
+                <select id="enquiryType" name="enquiryType">
                   <option value="">Select Enquiry Type</option>
                   <option value="Sales">Sales</option>
                   <option value="Support">Support</option>
@@ -77,33 +77,33 @@ include( "includes/site-info.php" );
               <div class="col-md-6 pe-md-2">
                 <label for="fName" class="input_wrap">
                 <label for="fName">First Name</label>
-                <input id="fName" type="text" placeholder="Enter First Name">
+                <input id="fName" name="fName" type="text" placeholder="Enter First Name">
                 </label>
               </div>
               <div class="col-md-6 ps-md-2">
                 <label for="lName" class="input_wrap">
                 <label for="lName">Last Name</label>
-                <input type="text" id="lName" placeholder="Enter Last Name">
+                <input type="text" id="lName" name="lName" placeholder="Enter Last Name">
                 </label>
               </div>
               <div class="col-12">
                 <label for="emailAddress" class="input_wrap">
                 <label for="emailAddress">Email Address</label>
-                <input type="text" id="emailAddress" placeholder="emailaddress@yourmail.com">
+                <input type="text" id="emailAddress" name="emailAddress" placeholder="emailaddress@yourmail.com">
                 </label>
               </div>
               <div class="col-12">
                 <label for="phoneNumber" class="input_wrap">
                 <label for="phoneNumber">Phone Number</label>
                 <div class="d-flex align-items-center gap-2"> <span class="fs-20 fw-600 lts-25 fc-silver-2">+91</span>
-                  <input id="phoneNumber" type="tel" placeholder="000 000 0000">
+                  <input id="phoneNumber" type="tel" name="phoneNumber" placeholder="000 000 0000">
                 </div>
                 </label>
               </div>
               <div class="col-md-6 pe-md-2">
                 <label for="companyType" class="input_wrap select">
                 <label for="companyType">Company Type</label>
-                <select id="companyType">
+                <select id="companyType" name="companyType">
                   <option value="">Select Company Type</option>
                   <option value="Developer">Developer</option>
                   <option value="General Contractor">General Contractor</option>
@@ -117,13 +117,13 @@ include( "includes/site-info.php" );
               <div class="col-md-6 ps-md-2">
                 <label for="companyName" class="input_wrap">
                 <label for="">Company Name</label>
-                <input id="companyName" type="text" placeholder="Enter Company Name">
+                <input id="companyName" name="companyName" type="text" placeholder="Enter Company Name">
                 </label>
               </div>
               <div class="col-12">
                 <label for="comments" class="input_wrap">
                 <label for="comments">Comments/Questions</label>
-                <textarea class="pt-2" id="comments" placeholder="Type Your Query"></textarea>
+                <textarea class="pt-2" name="comments" id="comments" placeholder="Type Your Query"></textarea>
                 </label>
               </div>
               <div class="col-12 mt-md-5 mt-4">
