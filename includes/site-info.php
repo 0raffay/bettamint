@@ -4,7 +4,7 @@
 $siteURL = "http://localhost/bettamint";
 
 //Live:
-// $siteURL = "https://bettamint.com";
+  $siteURL = "https://bettamint.com";
 /* --- Site urls --- */
 
 

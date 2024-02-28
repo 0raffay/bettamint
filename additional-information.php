@@ -34,33 +34,32 @@
       </div>
     </div>
   </div>
-  <section id="payment-page">
+ <section id="payment-page">
     <div class="container">
       <div class="row full-width-content">
         <div class="col-lg-12 col-md-12 col-sm-12">
           <form method="post" class="paymentForm form-style-1" novalidate id="paymentForm">
             <input type="hidden" name="leadId" payment-lead-id>
-            <input type="hidden" name="customData" payment-custom-data>
-            <input type="hidden" name="packageType" payment-package-type>
+            <input type="hidden" name="package_type" payment-package-type>
             <div class="row">
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="firstName">First Name <span class="fa-asterisk"></span></label>
-                  <input type="text" placeholder="First Name" payment-validate payment-f-name id="firstName" name="firstName">
+                  <input type="text" placeholder="First Name" payment-validate payment-f-name id="firstName" name="billing_name">
                   <p class="error_message">Please enter your first name.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="lastName">Last Name <span class="fa-asterisk"></span></label>
-                  <input type="text" placeholder="Last Name" payment-validate payment-l-name id="lastName" name="lastName">
+                  <input type="text" placeholder="Last Name" payment-validate payment-l-name id="lastName" name="merchant_param3">
                   <p class="error_message">Please enter your last name.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="companyName">Company Name / Proprietor's Name <span class="fa-asterisk"></span></label>
-                  <input type="text" placeholder="Company Name" payment-company-name payment-validate id="companyName" name="companyName">
+                  <input type="text" placeholder="Company Name" payment-company-name payment-validate id="companyName" name="merchant_param1">
                   <p class="error_message">Please enter your company name.</p>
 
                 </div>
@@ -68,14 +67,14 @@
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="phone">Phone Number <span class="fa-asterisk"></span></label>
-                  <input type="tel" placeholder="Phone Number" payment-validate payment-regex="^\d{8,}$" payment-phone-number id="phone" name="phone">
+                  <input type="tel" placeholder="Phone Number" payment-validate payment-regex="^\d{8,}$" payment-phone-number id="phone" name="number">
                   <p class="error_message">Please enter your phone number.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="email">Email Address <span class="fa-asterisk"></span></label>
-                  <input type="email" placeholder="Email Address" payment-validate payment-regex="^[^\s@]+@[^\s@]+\.[^\s@]+$" payment-email-address id="email" name="email">
+                  <input type="email" placeholder="Email Address" payment-validate payment-regex="^[^\s@]+@[^\s@]+\.[^\s@]+$" payment-email-address id="email" name="billing_email">
                   <p class="error_message">Please enter your email address.</p>
                 </div>
               </div>
@@ -83,7 +82,7 @@
                 <div class="input_wrap mb-0">
                   <label for="gstin">GSTIN</label>
                   <div class="position-relative">
-                    <input type="text" placeholder="GSTIN" value="" id="gstin">
+                    <input type="text" placeholder="GSTIN" name="merchant_param2" value="" id="gstin">
                     <p class="error_message start-0 z-0" style="bottom: -48px;">
                       Please enter a valid gstin.
                     </p>
@@ -98,14 +97,14 @@
               <div class="col-md-12">
                 <div class="input_wrap">
                   <label for="address">Address <span class="fa-asterisk"></span></label>
-                  <textarea placeholder="Address" payment-validate class="pt-2" id="address" name="address" rows="3"></textarea>
+                  <textarea placeholder="Address" payment-validate class="pt-2" id="address" name="billing_address" rows="3"></textarea>
                   <p class="error_message">Please enter your address.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="city">City <span class="fa-asterisk"></span></label>
-                  <input placeholder="City" payment-validate type="text" id="city" name="city">
+                  <input placeholder="City" payment-validate type="text" id="city" name="billing_city">
                   <p class="error_message">Please enter your city name.</p>
                 </div>
               </div>
@@ -113,7 +112,7 @@
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="state">State <span class="fa-asterisk"></span></label>
-                  <select payment-validate value="">
+                  <select payment-validate value="" name="billing_state">
                     <option value="">State</option>
                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                     <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -158,14 +157,14 @@
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="country">Country <span class="fa-asterisk"></span></label>
-                  <input payment-validate placeholder="Country" required type="text" value="India" id="country" name="country">
+                  <input payment-validate placeholder="Country" required type="text" value="India" id="country" name="billing_country">
                   <p class="error_message">Please select your country.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input_wrap">
                   <label for="pincode">Pin Code <span class="fa-asterisk"></span></label>
-                  <input payment-validate placeholder="Pincode" type="text" id="pincode" name="pincode">
+                  <input payment-validate placeholder="Pincode" type="text" id="pincode" name="billing_zip">
                   <p class="error_message">Please select your pincode.</p>
                 </div>
               </div>
@@ -204,6 +203,30 @@
   <!--==== SCRIPTS START ====-->
   <?php include('includes/footer-scripts.php'); ?>
   <!--==== SCRIPTS END ====-->
+  
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  // Function to check if a cookie exists
+  function checkCookie(name) {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      // Check if this cookie starts with the specified name
+      if (cookie.startsWith(name + '=')) {
+        return true; // Cookie exists
+      }
+    }
+    return false; // Cookie does not exist
+  }
+
+  // Check if the cookie exists
+  if (!checkCookie('data')) {
+    // Redirect to index.php
+    window.location.href = 'index.php';
+  }
+});
+
+  </script>
 
 </body>
 

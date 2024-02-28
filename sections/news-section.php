@@ -7,16 +7,15 @@
       <div class="newsCard big mb-4 mb-lg-5 pb-lg-4">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="img_wrap"><a target="_blank" class="d-block" href="https://www.mid-day.com/brand-media/article/outlook-2024-for-tier-2-indian-real-estate-market-and-way-forward-for-daily-wage-23331767ss"><img src="assets/images/latest-article-images/5-innovative-solutions-large.png" alt="Reload Page"></a> </div>
+            <div class="img_wrap"><a target="_blank" class="d-block" href="https://bfsi.economictimes.indiatimes.com/news/fintech/bettamint-launches-payments-solution-for-construction-industry/107882749"><img src="https://bettamint.com/assets/images/latest-article-images/bettamint-launches-large.png" alt="Reload Page"></a> </div>
           </div>
-          <div class="col-lg-6"> <a target="_blank" class="newsCardBigText" href="https://www.mid-day.com/brand-media/article/outlook-2024-for-tier-2-indian-real-estate-market-and-way-forward-for-daily-wage-23331767ss"> 
+          <div class="col-lg-6"> <a target="_blank" class="newsCardBigText" href="https://bfsi.economictimes.indiatimes.com/news/fintech/bettamint-launches-payments-solution-for-construction-industry/107882749"> 
             
             <!--<h6 class="purple_label">Contractors & Developers</h6>-->
             
-            <h4 class="fs-30 fw-400 mb-20  pe-lg-4">Indian Real Estate Sector: <br>
-              Outlook 2024 for Tier 2 Indian Real Estate market and way forward... </h4>
-            <p class="fs-18 fw-400 mb-20"> Harmonizing Growth: A Vision for Tier 2 Real Estate and Its Artisans Kezya D Braganza, founder, Bettamint. In the evolving landscape of Indian urbanization Tier-2 cities are quickly becoming epicentres of real estate development, a trend fuelled by rising.... </p>
-            <div class="d-flex align-items-center"> <strong class="border-right fs-14 fw-500">By: Reality & More</strong> <span class="fs-14 fw-400 news-dot" style="color: #58677D;">Friday, 1 April 2022</span> </div>
+            <h4 class="fs-30 fw-400 mb-20  pe-lg-4">Bettamint launches payments solution for construction...</h4>
+            <p class="fs-18 fw-400 mb-20"> New Delhi, Bettamint, a workforce management solutions provider, on Wednesday said it has launched payments solution 'Bettapay' to better manage financial transactions in the construction sector. Bettapay can synchronize payments with specific project parameters such as debit notes, worker attendance for wage payments, and even rewards and incentives for completing time-sensitive tasks, Bettamint said in a statement.... </p>
+            <div class="d-flex align-items-center"> <strong class="border-right fs-14 fw-500">By: Economic Times</strong> <span class="fs-14 fw-400 news-dot" style="color: #58677D;">February 21st 2024</span> </div>
             </a> </div>
         </div>
       </div>
@@ -25,6 +24,14 @@
         <div class="splide" id="latestNewsSlider">
           <div class="splide__track">
             <ul class="splide__list">
+			  <li class="splide__slide"> <a target="_blank" href="https://www.mid-day.com/brand-media/article/outlook-2024-for-tier-2-indian-real-estate-market-and-way-forward-for-daily-wage-23331767ss" class="newsAndStoryCard d-flex align-items-center gap-3">
+                <div class="img_wrap"> <img src="assets/images/latest-article-images/5-innovative-solutions-large.png" alt="Reload Page" /> </div>
+                <div class="newsStoryCardText">
+                  <h5 class="fs-18 fw-600 mb-2">Outlook 2024 for Tier 2 Indian Real Estate market... </h5>
+                  <p class="fs-14 fw-400 mb-2"> Harmonizing Growth: A Vision for Tier 2 Real Estate...... </p>
+                  <div class="d-flex align-items-center gap-3"> <span class="fs-13 fw-500">Mid Day</span> <span class="fs-13 fw-400 news-dot" style="color: #58677d">January 25, 2024</span> </div>
+                </div>
+                </a> </li>	
               <li class="splide__slide"> <a target="_blank" href="https://www.realtynmore.com/indian-real-estate-sector-skyscraper-in-2023-realty-indices-too-surge-over-77-during-the-year-luxury-housing-shines-bright-realty-set-to-scale-higher-in-24/" class="newsAndStoryCard d-flex align-items-center gap-3">
                 <div class="img_wrap"> <img src="assets/images/latest-article-images/reality-small.png" alt="Reload Page" /> </div>
                 <div class="newsStoryCardText">

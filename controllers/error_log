@@ -16,3 +16,51 @@ Stack trace:
 #0 /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php(6): implode()
 #1 {main}
   thrown in /home/nhdlsw931ibj/public_html/v2/controllers/process_lead.php on line 6
+[26-Feb-2024 20:52:29 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[26-Feb-2024 20:52:29 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[26-Feb-2024 20:54:51 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[26-Feb-2024 20:54:51 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 03:54:00 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 03:54:00 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 03:54:02 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 03:54:02 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 03:54:07 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 03:54:07 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 05:21:27 UTC] PHP Warning:  Undefined array key "email" in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 2
+[27-Feb-2024 05:21:27 UTC] PHP Warning:  Undefined array key "name" in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 3
+[27-Feb-2024 05:21:27 UTC] PHP Warning:  Undefined array key "number" in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 4
+[27-Feb-2024 05:21:27 UTC] PHP Warning:  Undefined array key "profileLink" in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 6
+[27-Feb-2024 05:21:27 UTC] PHP Warning:  move_uploaded_file(job-files/1709011287new.txt): Failed to open stream: No such file or directory in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 19
+[27-Feb-2024 05:21:27 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phppHApnm&quot; to &quot;job-files/1709011287new.txt&quot; in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 19
+[27-Feb-2024 06:26:59 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 06:26:59 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 06:51:57 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 06:51:57 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 06:56:01 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 06:56:01 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 06:59:56 UTC] PHP Warning:  Undefined array key "email" in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 2
+[27-Feb-2024 06:59:56 UTC] PHP Warning:  Undefined array key "name" in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 3
+[27-Feb-2024 06:59:56 UTC] PHP Warning:  Undefined array key "number" in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 4
+[27-Feb-2024 06:59:56 UTC] PHP Warning:  Undefined array key "profileLink" in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 6
+[27-Feb-2024 07:00:38 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 07:00:38 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 07:02:11 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 07:02:11 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 07:05:41 UTC] PHP Warning:  move_uploaded_file(job-files/1709017541temp.txt): Failed to open stream: No such file or directory in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 19
+[27-Feb-2024 07:05:41 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phpyfHSe1&quot; to &quot;job-files/1709017541temp.txt&quot; in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 19
+[27-Feb-2024 07:10:19 UTC] PHP Warning:  move_uploaded_file(job-files/1709017819temp.txt): Failed to open stream: No such file or directory in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 37
+[27-Feb-2024 07:10:19 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phpwef9Zu&quot; to &quot;job-files/1709017819temp.txt&quot; in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 37
+[27-Feb-2024 07:14:11 UTC] PHP Warning:  move_uploaded_file(job-files/1709018051web-copy-links.txt): Failed to open stream: No such file or directory in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 37
+[27-Feb-2024 07:14:11 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/php2jzwE7&quot; to &quot;job-files/1709018051web-copy-links.txt&quot; in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 37
+[27-Feb-2024 07:16:08 UTC] PHP Warning:  move_uploaded_file(/job-files/1709018168temp.txt): Failed to open stream: No such file or directory in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 33
+[27-Feb-2024 07:16:08 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phpFtBuNX&quot; to &quot;/job-files/1709018168temp.txt&quot; in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 33
+[27-Feb-2024 07:25:15 UTC] PHP Warning:  move_uploaded_file(job-files/1709018715error_log): Failed to open stream: No such file or directory in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 19
+[27-Feb-2024 07:25:15 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phpO3Zale&quot; to &quot;job-files/1709018715error_log&quot; in /home/nhdlsw931ibj/public_html/controllers/jobs_form_process.php on line 19
+[27-Feb-2024 10:31:00 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[27-Feb-2024 10:31:00 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[28-Feb-2024 05:06:05 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[28-Feb-2024 05:06:05 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[28-Feb-2024 12:36:17 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[28-Feb-2024 12:36:17 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[28-Feb-2024 17:33:06 UTC] PHP Warning:  Undefined variable $f_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16
+[28-Feb-2024 17:33:06 UTC] PHP Warning:  Undefined variable $l_name in /home/nhdlsw931ibj/public_html/controllers/contact_form.php on line 16

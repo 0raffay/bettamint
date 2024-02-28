@@ -4,10 +4,7 @@
     <div class="evenColumns flex-wrap">
       <div class="footerMainText">
         <div class="footerlogoBlack mb-30"> <a href="#"><img src="assets/images/logo-black.png" alt="Reload Page"></a> </div>
-        <p class="fs-14 fw-400 mb-50">Bettamint is a digital ecosystem transforming frontline workforce management
-          for the construction industry. We power developers and contractors with the tools
-          and resources needed to fast-track their projects, through an engaged, incentivised,
-          and productive workforce.</p>
+        <p class="fs-14 fw-400 mb-50">Bettamint is a digital ecosystem transforming frontline workforce management for  construction industry. We power developers and contractors with the tools and resources needed to fast-track their projects, through an engaged, incentivised, and productive workforce. Bettamint is dedicated to leveraging technology to propelling the construction sector and its stewards forward. Our integrated construction platform connects all project stakeholders, offering boundless support and a tailored platform built specifically for the construction.</p>
         <ul class="footerIcons d-flex align-items-center gap-15 list-unstyled">
           <li><a target="_blank" href="https://www.linkedin.com/company/bettamint/?originalSubdomain=in"><i class="ri-linkedin-box-fill"></i></a></li>
           <li><a target="_blank" href="https://www.facebook.com/bettamint2022"><i class="ri-facebook-fill"></i></a></li>
@@ -24,7 +21,6 @@
             <li><a href="workforce-management.php">Workforce Management</a></li>
             <li><a href="financial-management.php">Financial Management</a></li>
             <li><a href="construction-intelligence.php">Construction Intelligence</a></li>
-			
 			<li><a href="developers.php">Developers</a></li>
 			<li><a href="general-contractor.php">General Contractors </a></li>
 			<li><a href="sub-contractors.php">Sub Contractors</a></li>
@@ -37,10 +33,10 @@
             <li><a href="newsroom.php">Newsroom</a></li>
             <li><a href="http://bettamint.com/blog">Blog</a></li>
             <li><a href="latest-updates.php">Latest Updates</a></li>
-            <!--<li><a href="javascript:;">Media Kit</a></li>
-            <li><a href="javascript:;">Careers</a></li>
-            <li><a href="javascript:;">Internship Program</a></li>
-            <li><a href="javascript:;">Contact Us</a></li>-->
+            <!--<li><a href="javascript:;">Media Kit</a></li>-->
+            <li><a href="careers.php">Careers</a></li>
+            <!--<li><a href="internship.php">Internship Program</a></li>-->
+            <li><a href="contact-us.php">Contact Us</a></li>
           </ul>
         </div>
         <div>

@@ -79,3 +79,12 @@ Stack trace:
 [23-Feb-2024 23:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 88
 [23-Feb-2024 23:49:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nhdlsw931ibj/public_html/v2/index.php:17) in /home/nhdlsw931ibj/public_html/v2/includes/lead-form.php on line 88
 [25-Feb-2024 20:17:03 UTC] PHP Parse error:  syntax error, unexpected identifier "reload" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 112
+[26-Feb-2024 18:37:34 UTC] PHP Parse error:  syntax error, unexpected identifier "reload" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 112
+[26-Feb-2024 19:10:37 UTC] PHP Parse error:  syntax error, unexpected identifier "reload" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 112
+[26-Feb-2024 19:13:54 UTC] PHP Warning:  Undefined array key "email" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 18
+[26-Feb-2024 19:13:54 UTC] PHP Warning:  Undefined array key "name" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 19
+[26-Feb-2024 19:13:54 UTC] PHP Warning:  Undefined array key "number" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 22
+[26-Feb-2024 19:13:54 UTC] PHP Warning:  Undefined array key "jobId" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 23
+[26-Feb-2024 19:13:54 UTC] PHP Warning:  Undefined array key "profileLink" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 24
+[26-Feb-2024 19:13:54 UTC] PHP Warning:  Undefined array key "message" in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 52
+[26-Feb-2024 19:13:54 UTC] PHP Warning:  Undefined variable $fileToUploadCV in /home/nhdlsw931ibj/public_html/jobs_form_process.php on line 100

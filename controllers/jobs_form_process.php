@@ -1,27 +1,43 @@
 <?php
-$email = $_REQUEST['email'];
-$name = $_REQUEST['name'];
-$number = $_REQUEST['number'];
+$email = $_REQUEST['jobEmail'];
+$name = $_REQUEST['jobUserName'];
+$number = $_REQUEST['jobNumber'];
 $jobId = $_REQUEST['jobId'];
-$profileLink = $_REQUEST['profileLink'];
+$profileLink = $_REQUEST['jobSocialLink'];
+
+// if (@$_FILES['fileToUploadCV']) {
+//   $file_name = time() . $_FILES['fileToUploadCV']['name'];
+//   $file_size = $_FILES['fileToUploadCV']['size'];
+//   $file_tmp = $_FILES['fileToUploadCV']['tmp_name'];
+//   $file_type = $_FILES['fileToUploadCV']['type'];
+//   $url = "http://";
+//   $url .= $_SERVER['HTTP_HOST'];
+//   $url .= $_SERVER['REQUEST_URI'];
+//   $count = strpos($url, 'controllers/jobs_form_process.php');
+//   $path = substr($url, 0, $count);
+//   $fileToUploadCV = $path . 'job-files/' . $file_name;
+//   move_uploaded_file($file_tmp, "job-files/" . $file_name);
+// }
 
 if (@$_FILES['fileToUploadCV']) {
-  $file_name = time() . $_FILES['fileToUploadCV']['name'];
-  $file_size = $_FILES['fileToUploadCV']['size'];
-  $file_tmp = $_FILES['fileToUploadCV']['tmp_name'];
-  $file_type = $_FILES['fileToUploadCV']['type'];
-  $url = "http://";
-  $url .= $_SERVER['HTTP_HOST'];
-  $url .= $_SERVER['REQUEST_URI'];
-  $count = strpos($url, 'jobs_form_process.php');
-  $path = substr($url, 0, $count);
-  $fileToUploadCV = $path . 'job-files/' . $file_name;
-  move_uploaded_file($file_tmp, "job-files/" . $file_name);
+    $file_name = time() . $_FILES['fileToUploadCV']['name'];
+    $file_tmp = $_FILES['fileToUploadCV']['tmp_name'];
+    // $file_type = $_FILES['fileToUploadCV']['type'];
+    // Destination directory
+    $destination_dir = '../job-files/';
+    
+    // Move the file to the destination directory
+    if (move_uploaded_file($file_tmp, $destination_dir . $file_name)) {
+        echo "File moved successfully.";
+    } else {
+        echo "Failed to move file.";
+    }
 }
+
 
 $cmessage = $_REQUEST['message'];
 
-$to = "kezya@bettamint.com,divya@bettamint.com, 0.abdulraffay@gmail.com";
+$to = "kezya@bettamint.com,divya@bettamint.com";
 $subject = "Job Application Filled ";
 
 // Set headers for HTML email
@@ -58,7 +74,7 @@ $html = "
       </tr>
       <tr>
           <th style='padding-top: 12px; padding-bottom: 12px; text-align: left; background-color: #81B734; color: white; border: 1px solid #ddd; padding: 8px;'>Resume</th>
-          <td style='border: 1px solid #ddd; padding: 8px;'>$file_name</td>
+          <td style='border: 1px solid #ddd; padding: 8px;'>https://bettamint.com/job-files/$file_name </td>
       </tr>
       <tr>
           <th style='padding-top: 12px; padding-bottom: 12px; text-align: left; background-color: #81B734; color: white; border: 1px solid #ddd; padding: 8px;'>Message</th>

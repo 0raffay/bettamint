@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 include("../includes/site-info.php");
-$articleTitle = "Indian Real Estate Sector: Skyscraper In 2023, Realty Indices Too Surge Over 77% During the Year, Luxury Housing Shines Bright, Realty Set to Scale Higher In ‘24
+$articleTitle = "Bettamint Unveils Revolutionary App to transform Unstructured Construction Landscape
 ";
 ?>
 
