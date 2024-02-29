@@ -84,16 +84,20 @@ include("includes/site-info.php");
 
       <ul class="row align-items-center text-center px-3 px-md-0">
         <li class="col-sm-6 col-lg-3 px-3 px-sm-0">
-          <img src="assets//images/good-company/1.png" width="230" height="39" alt="Reload Page">
+          <img src="assets/images/good-company/1.png" width="230" height="39" alt="Reload Page">
         </li>
         <li class="col-sm-6 col-lg-3 px-3 px-sm-0">
-          <img src="assets//images/good-company/2.png" width="100" height="88" alt="Reload Page">
+          <img src="assets/images/good-company/3.png" width="345" height="60" alt="Reload Page">
         </li>
-        <li class="col-sm-6 col-lg-3 px-3 px-sm-0">
-          <img src="assets//images/good-company/3.png" width="345" height="60" alt="Reload Page">
+        <li class="col-sm-6 col-lg-2 px-3 px-sm-0">
+          <img src="assets/images/good-company/9.png" width="125" height="84" alt="Reload Page">
         </li>
-        <li class="col-sm-6 col-lg-3 px-3 px-sm-0">
-          <img src="assets//images/good-company/4.png" width="160" height="59" alt="Reload Page">
+        
+        <li class="col-sm-6 col-lg-2 px-3 px-sm-0">
+          <img src="assets/images/good-company/10.png" width="120" height="108" alt="Reload Page">
+        </li>
+        <li class="col-sm-6 col-lg-2 px-3 px-sm-0">
+          <img src="assets/images/good-company/7.png" width="125" height="90" alt="Reload Page">
         </li>
       </ul>
     </div>

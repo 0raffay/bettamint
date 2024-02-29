@@ -35,10 +35,9 @@ include("includes/site-info.php");
     <div class="bannerTextContainer">
       <div class="container">
         <div class="bannerText mx-auto text-center">
-          <h6 class="bannerLabel">CONSTRUCTION MANAGEMENT SOFTWARE</h6>
-          <h1 class="bannerTitle">We're obsessed with
-            construction.</h1>
-          <p class="bannerSubtitle small">We’re not just in the construction business, we live and breathe it. For over 30 years, we've worked with industry folks across geographies, enterprise sizes and asset classes to build solutions around the way you work . We've been right there, figuring out the best ways to make your project flow smoothly and ensuring your team gets paid without a hitch. Curious about what we offer?</p>
+          <h6 class="bannerLabel">BUILT FOR BUILDERS BY BUILDERS</h6>
+          <h1 class="bannerTitle">We’re obsessed with construction</h1>
+          <p class="bannerSubtitle small">We’re not just in the construction business, we live and breathe it. For over 22 years, we’ve worked with industry folks across geographies, enterprise sizes and asset classes to build solutions around the way you work . We’ve been right there, figuring out the best ways to make your project flow smoothly and ensuring your team gets paid without a hitch. Curious about what we offer?</p>
           <div class="d-flex align-items-center gap-3 justify-content-center"> <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Sign Up Now</a> <a target="_blank" href="https://calendly.com/kezyadebraganca/introduction-to-bettamint" class="btn btn-primary">Request a Demo</a> </div>
         </div>
       </div>
@@ -153,7 +152,7 @@ include("includes/site-info.php");
       <div class="aboutSlider dots-variant-1">
         <div class="item">
           <a class="aboutCard d-block position-relative">
-            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <img src="assets/images/about-pic-one.png" alt="Reload Page">
             <div class="aboutCardText position-absolute">
               <h6>Social Equity</h6>
               <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
@@ -163,50 +162,50 @@ include("includes/site-info.php");
         </div>
         <div class="item">
           <a class="aboutCard d-block position-relative">
-            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <img src="assets/images/about-pic-two.png" alt="Reload Page">
             <div class="aboutCardText position-absolute">
-              <h6>Social Equity</h6>
-              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <h6>Social Inclusion</h6>
+              <p>We help workers create an authenticated professional and financial identity, promoting social cohesion and active citizenship.</p>
               <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
             </div>
           </a>
         </div>
         <div class="item">
           <a class="aboutCard d-block position-relative">
-            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <img src="assets/images/about-pic-three.png" alt="Reload Page">
             <div class="aboutCardText position-absolute">
-              <h6>Social Equity</h6>
-              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <h6>Upward Mobility</h6>
+              <p>We help improve worker skills, reach, employability and the opportunity to build a better future for themselves.</p>
               <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
             </div>
           </a>
         </div>
         <div class="item">
           <a class="aboutCard d-block position-relative">
-            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <img src="assets/images/about-pic-four.png" alt="Reload Page">
             <div class="aboutCardText position-absolute">
-              <h6>Social Equity</h6>
-              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <h6>Behaviourism</h6>
+              <p>We equip daily wage workers with the tools and resources to move from a job mindset to an entrepreneurial mindset.</p>
               <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
             </div>
           </a>
         </div>
         <div class="item">
           <a class="aboutCard d-block position-relative">
-            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <img src="assets/images/about-pic-five.png" alt="Reload Page">
             <div class="aboutCardText position-absolute">
-              <h6>Social Equity</h6>
-              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <h6>Financial Literacy</h6>
+              <p>Our financial products allow workers to easily manage their day to day needs and participate in the digital economy.</p>
               <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
             </div>
           </a>
         </div>
         <div class="item">
           <a class="aboutCard d-block position-relative">
-            <img src="assets/images/about-card-1.jpg" alt="Reload Page">
+            <img src="assets/images/about-pic-six.png" alt="Reload Page">
             <div class="aboutCardText position-absolute">
-              <h6>Social Equity</h6>
-              <p>We enable fair access to opportunity, income stability and democratise information availability to the digitally disadvantaged.</p>
+              <h6>Micro-Commerce</h6>
+              <p>We lay the foundational infrastructure unlocking new products and services that are necessary and affordable to daily wage workers.</p>
               <button>Expand <i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
             </div>
           </a>
@@ -218,14 +217,12 @@ include("includes/site-info.php");
 
 
   <!-- Comapny Logo Slider End  -->
-  <section class="companySliderSection">
+  <!--<section class="companySliderSection">
     <div class="container py-md-5">
       <div class="section_text mb-4 mb-lg-5 pb-lg-3 text-center small mx-auto">
         <h4 class="section_heading lh-1 mb-3">Fueling our Innovation</h4>
         <p>Our invaluable partners play a significant role in enabling us to deliver solutions of the highest caliber that consistently drive impactful results for our clients. Each partnership amplifies our resolve to transform and streamline the building process, fostering an environment of innovation and excellence.</p>
       </div>
-
-
       <div class="companySlider dots-variant-1">
         <div class="item">
           <ul class="row align-items-center text-center px-3 px-md-0">
@@ -275,7 +272,7 @@ include("includes/site-info.php");
 
 
     </div>
-  </section>
+  </section>-->
   <!-- Comapny Logo Slider End  -->
 
   <section class="esgImpactSection">

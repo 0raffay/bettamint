@@ -4,7 +4,7 @@
       <div class="storySlider">
         <div class="item">
           <div class="storySliderCard">
-            <div class="storyMainImage img_wrap flex-lg-shrink-0"> <img src="assets/images/story-1.jpg" alt="Reload Page"> </div>
+            <div class="storyMainImage img_wrap flex-lg-shrink-0"> <img src="assets/images/testimonials/k2k.png" alt="Reload Page"> </div>
             <div class="storyCardText">
               <h6 class="fs-18 lh-1 fw-300 fc-white text-uppercase mb-3">Customer Story</h6>
               <p class="fs-30 fw-400 fc-white lh-normal mb-3">Bettamint seamlessly aligns with our vision</p>
@@ -22,7 +22,7 @@
         </div>
         <div class="item">
           <div class="storySliderCard">
-            <div class="storyMainImage img_wrap flex-lg-shrink-0"> <img src="assets/images/story-1.jpg" alt="Reload Page"> </div>
+            <div class="storyMainImage img_wrap flex-lg-shrink-0"> <img src="assets/images/testimonials/Provident-Housing.png" alt="Reload Page"> </div>
             <div class="storyCardText">
               <h6 class="fs-18 lh-1 fw-300 fc-white text-uppercase mb-3">Customer Story</h6>
 			  <p class="fs-30 fw-400 fc-white lh-normal mb-3">It addresses an important aspect of our business</p>	
@@ -40,7 +40,7 @@
         </div>
         <div class="item">
           <div class="storySliderCard">
-            <div class="storyMainImage img_wrap flex-lg-shrink-0"> <img src="assets/images/story-1.jpg" alt="Reload Page"> </div>
+            <div class="storyMainImage img_wrap flex-lg-shrink-0"> <img src="assets/images/testimonials/Sattva.png" alt="Reload Page"> </div>
             <div class="storyCardText">
               <h6 class="fs-18 lh-1 fw-300 fc-white text-uppercase mb-3">Customer Story</h6>
 			  <p class="fs-30 fw-400 fc-white lh-normal mb-3">The platform expedites our approach to project execution</p>		
@@ -58,7 +58,7 @@
         </div>
         <div class="item">
           <div class="storySliderCard">
-            <div class="storyMainImage img_wrap flex-lg-shrink-0"> <img src="assets/images/story-1.jpg" alt="Reload Page"> </div>
+            <div class="storyMainImage img_wrap flex-lg-shrink-0"> <img src="assets/images/testimonials/NR-Greenwoods.png" alt="Reload Page"> </div>
             <div class="storyCardText">
               <h6 class="fs-18 lh-1 fw-300 fc-white text-uppercase mb-3">Customer Story</h6>
 			  <p class="fs-30  fw-400 fc-white lh-normal mb-3">It reduces most of our work at site</p>	

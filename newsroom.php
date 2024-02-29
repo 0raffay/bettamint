@@ -46,7 +46,7 @@ include( "includes/site-info.php" );
 
 <!--====Latst Blog start ====-->
 <section class="latestBlogSection">
-  <div class="container container-large">
+  <div class="container container-large">  
     <div class="row justify-content-between mb-lg-5 mb-3">
       <div class="col-lg-auto">
         <h4 class="fs-25 fw-600 lh-1-5 fc-black">Latest From The Blog</h4>
@@ -57,7 +57,7 @@ include( "includes/site-info.php" );
 		
 	<script>
     document.addEventListener('DOMContentLoaded', function() {
-        const apiUrl = 'https://www.bettamint.com/blog/wp-json/wp/v2/posts?per_page=3';
+        const apiUrl = 'https://www.bettamint.com/blog/wp-json/wp/v2/posts?per_page=4';
         fetch(apiUrl)
             .then((res1) => {
                 if (!res1.ok) {
@@ -97,7 +97,6 @@ include( "includes/site-info.php" );
                 <h6 class='fs-22 fw-700 fc-black mb-2'>${postTitle.slice(0, 200)}</h6>
                 <p class='fw-600 mb-3'>${postExcerpt.slice(0, 90)}</p>
                 <div class='d-flex align-items-center'>
-                    <img src='assets/images/person-icon-1.png' class='me-2 d-block' alt='Reload Page'>
                     <strong class='border-right fw-700 fc-black fs-13'>By: ${postAuthor}</strong>
                     <span class='fs-14 fw-400 news-dot fc-silver'>${postDate}</span>
                 </div>

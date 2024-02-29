@@ -307,6 +307,19 @@ include("includes/site-info.php");
 
     })
   </script>
+    
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('careerForm'), {})
+        var closeButton = document.querySelector('#careerForm .modal-header .close');
+  
+  // Add a click event listener to the close button
+  closeButton.addEventListener('click', function() {
+    // Your custom code here
+  myModal.hide()
+
+    // Additional actions can be performed here
+  });
+    </script>
 
 </body>
 

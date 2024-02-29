@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/libs.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/libs.css?v=<?php echo time();?>">
+  <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time();?>">
   <title>test-lead</title>
 </head>
 
@@ -39,8 +39,8 @@
                 <option value="" selected></option>
                 <option value="Developer" <?php if (isset($_SESSION['account_type']) && $_SESSION['account_type'] == 'Developer') echo "selected"; ?>>Developer</option>
                 <option value="Contractor" <?php if (isset($_SESSION['account_type']) && $_SESSION['account_type'] == 'General Contractor') echo "selected"; ?>>General Contractor</option>
-                <option value="Sub Contractor" <?php if (isset($_SESSION['account_type']) && $_SESSION['account_type'] == 'Sub Contractor') echo "selected"; ?>>Sub Contractor</option>
-                <option value="Labour Contractor" <?php if (isset($_SESSION['account_type']) && $_SESSION['account_type'] == 'Labour Contractor') echo "selected"; ?>>Labour Contractor</option>
+                <option value="SubContractor" <?php if (isset($_SESSION['account_type']) && $_SESSION['account_type'] == 'Sub Contractor') echo "selected"; ?>>Sub Contractor</option>
+                <option value="LabourContractor" <?php if (isset($_SESSION['account_type']) && $_SESSION['account_type'] == 'Labour Contractor') echo "selected"; ?>>Labour Contractor</option>
                 <option value="Individual" <?php if (isset($_SESSION['account_type']) && $_SESSION['account_type'] == 'Individual') echo "selected"; ?>>Individual</option>
                 <option value="Consultant" <?php if (isset($_SESSION['account_type']) && $_SESSION['account_type'] == 'Consultant') echo "selected"; ?>>Consultant</option>
               </select>
@@ -246,13 +246,17 @@
     </form>
   </div>
 
-  <script src="assets/js/libs.js"></script>
-  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/libs.js?v=<?php echo time();?>"></script>
+  <script src="assets/js/functions.js?v=<?php echo time();?>"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 
-  <script src="assets/multi-select/multi-select.js"></script>
-  <link rel="stylesheet" href="assets/multi-select/multi-select.css">
+  <script src="assets/multi-select/multi-select.js?v=<?php echo time();?>"></script>
+  <link rel="stylesheet" href="assets/multi-select/multi-select.css?v=<?php echo time();?>">
   <script>
+    
+//  $(".scopeOfWorkSelect").find('option, optgroup').each(function() {
+//     $(this).val($(this).val().trim().split(" ").join(""));
+// });
     $('.scopeOfWorkSelect').multiselect({
       columns: 1,
       texts: {
@@ -342,6 +346,9 @@
       }, function() {
         const scopeOfWork = $("[data-scope-of-work].active");
         const val = scopeOfWork.next().find("button").find("span").html();
+        
+
+        
         if (val == "") {
           scopeOfWork.parent().addClass("error");
           return;
@@ -349,7 +356,7 @@
         scopeOfWork.parent().removeClass("error");
         $(".form_loader").show();
 
-        const data = {
+          const data = {
           firstName: $("#leadForm").find("[name='first_name']").val(),
           lastName: $("#leadForm").find("[name='last_name']").val(),
           companyName: $("#leadForm").find("[name='company']").val(),

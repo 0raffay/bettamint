@@ -4,11 +4,12 @@
 <script src="assets/js/libs.js"></script>
 <!-- library files end =-->
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
 <!-- local files start =-->
 <script src="assets/js/functions.js?v=<?php echo time(); ?>"></script>
 <script src="assets/js/script.js?v=<?php echo time(); ?>"></script>
 <!-- local files end =-->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 
 <script src="assets/multi-select/multi-select.js"></script>
 <link rel="stylesheet" href="assets/multi-select/multi-select.css">

@@ -181,7 +181,7 @@ function getCookie(name) {
   return null;
 }
 
-function handleLeadForm(data) {
+function handleLeadForm() {
   validateForm({
     form: "#leadForm",
     inputs: "[lead-validate]",
@@ -194,6 +194,9 @@ function handleLeadForm(data) {
   }, function () {
     const scopeOfWork = $("[data-scope-of-work].active");
     const val = scopeOfWork.next().find("button").find("span").html();
+
+
+
     if (val == "") {
       scopeOfWork.parent().addClass("error");
       return;
@@ -204,12 +207,16 @@ function handleLeadForm(data) {
     const data = {
       firstName: $("#leadForm").find("[name='first_name']").val(),
       lastName: $("#leadForm").find("[name='last_name']").val(),
-      Profession: $("#leadForm").find("[name='account_type']").val(),
-      scopeOfWork: val,
       companyName: $("#leadForm").find("[name='company']").val(),
       email: $("#leadForm").find("[name='email']").val(),
       phoneNumber: $("#leadForm").find("[name='number']").val(),
-      packageType: "basic",
+      Profession: $("#leadForm").find("[name='account_type']").val(),
+      panNumber: null,
+      message: "-",
+      packageType: "Basic",
+      scopeOfWork: val,
+      isConverted: false,
+      customdata: null,
     }
 
     callLeadApi(data);
@@ -244,10 +251,9 @@ function handleLeadForm(data) {
       document.cookie = "data=" + encodedData + "; expires=" + expirationDate.toUTCString() + "; path=/";
 
 
-      window.location.href = "payment.php";
+      window.location.href = "additional-information.php";
     }).catch(error => {
-      console.error
-        ('Error:', error);
+      console.error('Error:', error);
     });
   }
 
@@ -260,14 +266,14 @@ function paymentPageCookie() {
   const dataCookie = getCookie('data');
   const parsedData = dataCookie ? JSON.parse(dataCookie) : {};
 
-  $("[payment-f-name]").val(parsedData.firstName)
-  $("[payment-l-name]").val(parsedData.lastName)
-  $("[payment-company-name]").val(parsedData.companyName)
-  $("[payment-phone-number]").val(parsedData.phoneNumber)
-  $("[payment-email-address]").val(parsedData.email)
-  $("[payment-lead-id]").val(parsedData.leadId)
-  $("[payment-custom-data]").val(parsedData.customData)
-  $("[payment-package-type]").val(parsedData.packageType)
+$("[payment-f-name]").val(parsedData.firstName).addClass("pointer-events-none")
+$("[payment-l-name]").val(parsedData.lastName).addClass("pointer-events-none")
+$("[payment-company-name]").val(parsedData.companyName).addClass("pointer-events-none")
+$("[payment-phone-number]").val(parsedData.phoneNumber).addClass("pointer-events-none")
+$("[payment-email-address]").val(parsedData.email).addClass("pointer-events-none")
+$("[payment-lead-id]").val(parsedData.leadId).addClass("pointer-events-none")
+$("[payment-package-type]").val(parsedData.packageType).addClass("pointer-events-none")
+
 }
 
 function handlePaymentForm() {
@@ -296,7 +302,9 @@ function handlePaymentForm() {
       if (!gstinPattern.test(gstin)) {
         gstinError.show();
         gstinError.html('Invalid GSTIN');
-        gstinError.css({ color: "red" });
+        gstinError.css({
+          color: "red"
+        });
         return false;
       }
       gstinError.hide();
@@ -308,13 +316,24 @@ function handlePaymentForm() {
     }
     $(".payment-error").hide();
 
+
+    const additionFormData = $("#paymentForm").serializeArray();
+
+    const structuredData = {};
+
+    additionFormData.forEach(item => {
+      structuredData[item.name] = item.value;
+    })
+
+    console.log(structuredData);
+
     $(".form_loader").show();
     const send = {
       leadId: $("[payment-lead-id]").val(),
-      customData: $("[payment-custom-data]").val(),
+      customdata: JSON.stringify(structuredData),
       packageType: $("[payment-package-type").val(),
     }
-
+    console.log(send);
     const api = "https://api-prod.bettamint.com/api/dashboard/Lead";
     const requestOptions = {
       method: 'POST',
@@ -333,6 +352,7 @@ function handlePaymentForm() {
       }
       return response.json();
     }).then(data => {
+      console.log(data);
       $(".form_loader").hide();
       Swal.fire("Success!", "Form submitted successfully!", "success").then(function () {
         window.location.href = "index.php";
@@ -341,8 +361,7 @@ function handlePaymentForm() {
       Swal.fire("Error!", "Something went wrong!", "error").then(function () {
         $(".form_loader").hide();
       });
-      console.error
-        ('Error:', error);
+      console.error('Error:', error);
     });
   })
-} 
+}

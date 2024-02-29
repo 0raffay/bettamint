@@ -40,7 +40,7 @@ include("includes/site-info.php");
           <h1 class="bannerTitle">Internship Program</h1>
           <p class="bannerSubtitle small">We provide great exposure to students practically by involving them in live projects better preparing them for accelerated growth in a technology company, being equipped with all the skills required to excel in their career</p>
           <div class="d-flex align-items-center gap-3 justify-content-center">
-            <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Apply Now</a>
+            <a target="_blank" href="#" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#careerForm">Apply Now</a>
           </div>
         </div>
       </div>
@@ -105,33 +105,40 @@ include("includes/site-info.php");
         </div>
         <div class="col-lg-8">
           <div class="tabbingPanel" data-panel="panel_1">
-            <h6>In the evolving fintech landscape, data-driven decisions are <br>
-              paramount. Here at Bettamint:</h6>
+            <h6>In the evolving fintech landscape, data-driven decisions are paramount. Here at Bettamint:</h6>
             <ul class="tabbingPanelList">
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Dive deep into datasets to uncover patterns and insights.</li>
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Learn to interpret complex data and translate it into actionable strategies.</li>
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Engage in hands-on training sessions with our analytics experts to sharpen
-                your ability to make data-driven judgments.</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Dive deep into datasets to uncover patterns and insights.
+</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Learn to interpret complex data and translate it into actionable strategies.
+</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Engage in hands-on training sessions with our analytics experts to sharpen your ability to make data-driven judgments.</li>
             </ul>
           </div>
           <div class="tabbingPanel" data-panel="panel_2">
-            <h6>In the evolving fintech landscape, data-driven decisions are <br>
-              paramount. Here at Bettamint:</h6>
+            <h6>Understanding the market is crucial to any product's success. With our seasoned professionals guiding you:
+</h6>
             <ul class="tabbingPanelList">
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Dive deep into datasets to uncover patterns and insights.</li>
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Learn to interpret complex data and translate it into actionable strategies.</li>
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Engage in hands-on training sessions with our analytics experts to sharpen
-                your ability to make data-driven judgments.</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Gain insights into how to identify gaps in the market.
+</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Learn the intricacies of tailoring products to meet specific market demands.
+</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Engage in real-time projects that teach you to adjust product offerings based on feedback and market dynamics.
+
+</li>
+         
             </ul>
           </div>
           <div class="tabbingPanel" data-panel="panel_3">
-            <h6>In the evolving fintech landscape, data-driven decisions are <br>
-              paramount. Here at Bettamint:</h6>
+            <h6>Turning an idea into a tangible, functional product is an art and a science. At Bettamint:
+</h6>
             <ul class="tabbingPanelList">
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Dive deep into datasets to uncover patterns and insights.</li>
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Learn to interpret complex data and translate it into actionable strategies.</li>
-              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Engage in hands-on training sessions with our analytics experts to sharpen
-                your ability to make data-driven judgments.</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Immerse yourself in the complete product lifecycle, from ideation to launch.
+</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">Collaborate with cross-functional teams to understand the multi-faceted nature of product development.
+</li>
+              <li><img src="./assets/images/check-circle-1.png" alt="Reload Page">EngagLearn to leverage agile methodologies, ensuring products are developed efficiently and effectively.
+</li>
+
             </ul>
           </div>
         </div>
@@ -237,7 +244,7 @@ include("includes/site-info.php");
         <h4 class="fs-45 fw-600 clr-white mb-2">Join Our Internship Program</h4>
         <p class="fs-18a fw-400 mb-4">For any inquiries or further details about the program, please reach out to our internship coordinator. <br> Ignite your future with Bettamint!</p>
         <div class="d-flex align-items-center gap-3 justify-content-center">
-          <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leadForm">Apply Now</a>
+          <a target="_blank" href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#careerForm">Apply Now</a>
         </div>
       </div>
     </div>
@@ -255,6 +262,8 @@ include("includes/site-info.php");
 
   <!--==== FOOTER START ====-->
   <?php include('includes/footer.php'); ?>
+    <?php include("includes/career-form.php"); ?>
+
   <!--==== FOOTER END ====-->
 
   <!--==== SCRIPTS START ====-->
@@ -329,6 +338,37 @@ include("includes/site-info.php");
       });
     }
   </script>
+  
+  
+   <script>
+    $(".job-name").each(function() {
+      $(this).parent().next("a").attr("data-job-name", "Internship")
+    })
+
+    const careerModal = document.getElementById('careerForm')
+    careerModal.addEventListener('show.bs.modal', function(event) {
+
+      const button = event.relatedTarget
+      const jobName = button.getAttribute('data-job-name')
+
+      const jobInput = careerModal.querySelector('#jobName')
+      jobInput.value = jobName
+
+    })
+  </script>
+    
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('careerForm'), {})
+        var closeButton = document.querySelector('#careerForm .modal-header .close');
+  
+  // Add a click event listener to the close button
+  closeButton.addEventListener('click', function() {
+    // Your custom code here
+  myModal.hide()
+
+    // Additional actions can be performed here
+  });
+    </script>
 
 </body>
 

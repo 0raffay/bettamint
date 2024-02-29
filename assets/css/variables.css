@@ -13,9 +13,10 @@
     --clr-grey-600: #EBEBE4;
     --clr-grey-650: #B5B5B3;
 
-    --clr-grey-700: #656565;
-
-
+    /*--clr-grey-700: #656565;*/
+  
+	  --clr-grey-700: #7d7b7b;
+					
     --section-padding: 120px 0 85px;
 
     --font-controller: 0px;

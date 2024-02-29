@@ -13,7 +13,7 @@
         <div class="col-auto flex-fill">
           <nav>
             <ul class="navList list-unstyled d-flex">
-              <li class="rf--header-submenu-button"> <a href="">Solutions <i class="icon arrow-down"></i></a>
+              <li class="rf--header-submenu-button"> <a href="javascript:;">Solutions <i class="icon arrow-down"></i></a>
                 <div class="rf-header-submenu s">
                   <ul>
                     <li> <a href="project-management.php">
@@ -35,7 +35,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="rf--header-submenu-button"> <a href="">Who We Serve <i class="icon arrow-down"></i></a>
+              <li class="rf--header-submenu-button"> <a href="javascript:;">Who We Serve <i class="icon arrow-down"></i></a>
                 <div class="rf-header-submenu s">
                   <ul>
                     <li> <a href="developers.php">
@@ -53,7 +53,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="rf--header-submenu-button"> <a href="">Resources <i class="icon arrow-down"></i></a>
+              <li class="rf--header-submenu-button"> <a href="javascript:;">Resources <i class="icon arrow-down"></i></a>
                 <div class="rf-header-submenu s"> 
                   <!--<ul>
                     <li><a href="newsroom.php" title="Newsroom">Newsroom</a></li>
@@ -77,14 +77,20 @@
                   </ul>
                 </div>
               </li>
-              <!--<li class=""><a href="">Careers </a> 
+              <li class="rf--header-submenu-button"><a href="javascript:;">Careers <i class="icon arrow-down"></i></a>
                 <div class="rf-header-submenu s">
                   <ul>
-                    <li><a href="javascript:;" title="Careers">Careers</a></li>
-                    <li><a href="javascript:;" title="Internships">Internships</a></li>
+                    <li> <a href="careers.php">
+                      <h6 class="fc-black fs-14	 lt-0 lh-1-1 fw-600 mb-2">Careers<i class="ms-1 ri-arrow-right-s-line"></i></h6>
+                      <p>Explore opportunities. Join us. Shape the future. Your career begins</p>
+                      </a> </li>
+                    <li> <a href="internship.php">
+                      <h6 class="fc-black fs-14	 lt-0 lh-1-1 fw-600 mb-2">Internships<i class="ms-1 ri-arrow-right-s-line"></i></h6>
+                      <p>Unlock potential. Gain experience. Intern with us. Your journey starts.</p>
+                      </a> </li>
                   </ul>
-                </div> 
-              </li>-->
+                </div>
+              </li>
               <li><a href="about-us.php">About Us</a></li>
             </ul>
           </nav>
@@ -128,14 +134,14 @@
         <!--<li><a class="rfInnerMobileMenuButton" href="javascript:;" title="Media Kit">Media Kit</a></li>-->
       </ul>
     </li>
-    <!--<li>
+    <li>
       <button class="rfMobileMenuButton" mobile-button-accordion="careers">Careers <i class="icon"></i></button>
       <ul class="rfInnerMobileMenuList" mobile-button-accordion-target="careers">
-        <li><a class="rfInnerMobileMenuButton" href="javascript:;" title="Careers">Careers</a></li>
-        <li><a class="rfInnerMobileMenuButton" href="javascript:;" title="Internships">Internships</a></li>
+        <li><a class="rfInnerMobileMenuButton" href="careers.php" title="Career">Careers</a></li>
+        <li><a class="rfInnerMobileMenuButton" href="internship.php" title="Internships">Internships</a></li>
       </ul>
-    </li>-->
+    </li>
     <li> <a href="about-us.php" class="rfMobileMenuButton">About Us</a> </li>
   </ul>
-  <div class="col-auto"> <a target="_blank" href="https://admin.bettamint.com/auth/login" class="btn btn-white-border headerButton-mobile"> <img src="assets/images/icons/user-icon.svg" alt="User Icon"> Login </a> </div>	
+  <div class="col-auto"> <a target="_blank" href="https://admin.bettamint.com/auth/login" class="btn btn-white-border headerButton-mobile"> <img src="assets/images/icons/user-icon.svg" alt="User Icon"> Login </a> </div>
 </div>

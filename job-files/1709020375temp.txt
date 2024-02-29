@@ -1,0 +1,13 @@
+wp forms:
+
+about/contact-us
+footer/contact
+footer/newsletter
+
+main Forms:
+
+donate form/donate-form.php (done)
+volunteer form->get-involved (done)
+checkout page form (done)
+grant application form
+vacancy form -> get-involved (done)

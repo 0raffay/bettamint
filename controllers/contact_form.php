@@ -11,7 +11,7 @@ $companyName = @$_POST["companyName"];
 $comments = @$_POST["comments"];
 
 
-$to = "kezya@bettamint.com,yudhisther@bettamint.com, 0.abdulraffay@gmail.com";
+$to = "kezya@bettamint.com,yudhisther@bettamint.com";
 
 $username = $f_name . $l_name;
 
@@ -109,7 +109,7 @@ $html = "
 
 
 if (mail($to, $subject, $html, $headers)) {
-  header("location: thankyou.php");
+header("location: ../thankyou.php");
   echo "1";
 } else {
 
